@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Primary">#103c84</color>
+    <color name="Secondary">#e8047c</color>
+    <color name="black">#FF000000</color>
+    <color name="button">#e8047c</color>
+    <color name="grey">#808080</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">JobPoster</string>
+    <string name="email">email@gmail.com</string>
+    <string name="full_name">Full Name</string>
+    <string name="have_account">Already have an Account?</string>
+    <string name="password">cornypassword</string>
+    <string name="phone_number">0772233445</string>
+    <string name="register">Register</string>
+    <style name="RoundCorner" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+        <item name="color">@color/white</item>
+    </style>
+    <style name="Theme.JobPoster" parent="Theme.AppCompat.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/Primary</item>
+        <item name="colorPrimaryVariant">@color/Secondary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+    </style>
+</resources>
