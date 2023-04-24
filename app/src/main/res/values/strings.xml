@@ -6,4 +6,8 @@
     <string name="password">cornypassword</string>
     <string name="register">Register</string>
     <string name="have_account">Already have an Account?</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="joblister">JobLister</string>
+    <string name="jobseeker">JobSeeker</string>
 </resources>

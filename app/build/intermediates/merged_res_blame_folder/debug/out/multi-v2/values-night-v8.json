@@ -4,14 +4,14 @@
             "outputFile": "com.example.jobposter.app-mergeDebugResources-27:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\JobPoster\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "F:\\Code\\HTML\\MAD_PoddiWadak\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "100",
+                        "startOffsets": "102",
                         "endLines": "12",
                         "endColumns": "12",
-                        "endOffsets": "550"
+                        "endOffsets": "562"
                     },
                     "to": {
                         "startLines": "9",

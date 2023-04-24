@@ -28,6 +28,7 @@
                 <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debugAndroidTest/R.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/5bfaa2c4fff91addfae3b78490d23f49/transformed/junit-1.1.5-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/ce6db96c5cc4dbe1d0556e8de0fe2a32/transformed/espresso-core-3.5.1-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/49735d59e70ae98f504c0e720111e0e4/transformed/viewbinding-7.4.2-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/ac6d0254121798da9621b5d9c3f8ff3f/transformed/material-1.8.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/7840fc7f0710c9cb86245722b833a1d2/transformed/appcompat-1.6.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/e1a1a383fa07318b1ee107ccc08261c5/transformed/viewpager2-1.0.0-api.jar</arg>
@@ -115,5 +116,4 @@
       </configuration>
     </facet>
   </component>
-  <component name="TestModuleProperties" production-module="JobPoster.app.main" />
 </module>

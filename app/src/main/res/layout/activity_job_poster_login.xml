@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="44dp"
-        android:text="Already have an account?"
+        android:text="@string/already_have_an_account"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -61,7 +61,7 @@
         android:drawableLeft="@drawable/ic_email"
         android:drawablePadding="16dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/email"
         android:inputType="text"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +79,7 @@
         android:drawableLeft="@drawable/ic_lock"
         android:drawablePadding="16dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,7 +94,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/Primary"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="@color/Secondary"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -123,7 +123,7 @@
         android:layout_height="32dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
-        android:text="JobLister"
+        android:text="@string/joblister"
         android:textColor="@color/Secondary"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -152,7 +152,7 @@
         android:id="@+id/jobSeeker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="JobSeeker"
+        android:text="@string/jobseeker"
         android:textColor="@color/grey"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -163,19 +163,61 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.425" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigator"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:itemBackground="@color/Primary"
-        app:itemIconTint="@drawable/selector"
-        app:itemTextColor="@drawable/selector"
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/accountCreatelink"
-        app:layout_constraintVertical_bias="1.0"
-        app:menu="@menu/menu" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.998">
+
+        <Button
+            android:id="@+id/btn_Home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Primary"
+            android:drawableTop="@drawable/ic_smallhome"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/btn_Notification"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Primary"
+            android:drawableTop="@drawable/nav_notification"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/btn_Jobs"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Primary"
+            android:drawableTop="@drawable/baseline_business_center_24"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/btn_Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Primary"
+            android:drawableTop="@drawable/nav_profile"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/btn_More"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Primary"
+            android:drawableTop="@drawable/baseline_list_24"
+            android:text="Button" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
