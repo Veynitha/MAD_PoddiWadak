@@ -6,110 +6,110 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml
+8-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml
+9-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml
 10
 11    <permission
-11-->[androidx.core:core:1.9.0] C:\Users\ADMIN\.gradle\caches\transforms-3\c73afc1fa215d9ca128620a3c01802b0\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+11-->[androidx.core:core:1.9.0] C:\Users\ACER\.gradle\caches\transforms-3\c73afc1fa215d9ca128620a3c01802b0\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
 12        android:name="com.example.jobposter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.9.0] C:\Users\ADMIN\.gradle\caches\transforms-3\c73afc1fa215d9ca128620a3c01802b0\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+12-->[androidx.core:core:1.9.0] C:\Users\ACER\.gradle\caches\transforms-3\c73afc1fa215d9ca128620a3c01802b0\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
 13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.9.0] C:\Users\ADMIN\.gradle\caches\transforms-3\c73afc1fa215d9ca128620a3c01802b0\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+13-->[androidx.core:core:1.9.0] C:\Users\ACER\.gradle\caches\transforms-3\c73afc1fa215d9ca128620a3c01802b0\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 14
 15    <uses-permission android:name="com.example.jobposter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.9.0] C:\Users\ADMIN\.gradle\caches\transforms-3\c73afc1fa215d9ca128620a3c01802b0\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.9.0] C:\Users\ADMIN\.gradle\caches\transforms-3\c73afc1fa215d9ca128620a3c01802b0\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+15-->[androidx.core:core:1.9.0] C:\Users\ACER\.gradle\caches\transforms-3\c73afc1fa215d9ca128620a3c01802b0\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.9.0] C:\Users\ACER\.gradle\caches\transforms-3\c73afc1fa215d9ca128620a3c01802b0\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:5:5-38:19
+17-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:5:5-38:19
 18        android:allowBackup="true"
-18-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:6:9-35
+18-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.9.0] C:\Users\ADMIN\.gradle\caches\transforms-3\c73afc1fa215d9ca128620a3c01802b0\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+19-->[androidx.core:core:1.9.0] C:\Users\ACER\.gradle\caches\transforms-3\c73afc1fa215d9ca128620a3c01802b0\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:7:9-65
+20-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:7:9-65
 21        android:debuggable="true"
 22        android:extractNativeLibs="false"
 23        android:fullBackupContent="@xml/backup_rules"
-23-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:8:9-54
+23-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:8:9-54
 24        android:icon="@mipmap/ic_launcher"
-24-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:9:9-43
+24-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:9:9-43
 25        android:label="@string/app_name"
-25-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:10:9-41
+25-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:10:9-41
 26        android:supportsRtl="true"
-26-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:11:9-35
+26-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:11:9-35
 27        android:testOnly="true"
 28        android:theme="@style/Theme.JobPoster" >
-28-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:12:9-47
+28-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:12:9-47
 29        <activity
-29-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:14:9-16:40
+29-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:14:9-16:40
 30            android:name="com.example.jobposter.Insert_Job"
-30-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:15:13-39
+30-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:15:13-39
 31            android:exported="false" />
-31-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:16:13-37
+31-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:16:13-37
 32        <activity
-32-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:17:9-19:40
+32-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:17:9-19:40
 33            android:name="com.example.jobposter.Job_page"
-33-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:18:13-37
+33-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:18:13-37
 34            android:exported="false" />
-34-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:19:13-37
+34-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:19:13-37
 35        <activity
-35-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:20:9-22:40
+35-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:20:9-22:40
 36            android:name="com.example.jobposter.Job_Poster_register"
-36-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:21:13-48
+36-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:21:13-48
 37            android:exported="false" />
-37-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:22:13-37
+37-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:22:13-37
 38        <activity
-38-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:23:9-25:40
+38-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:23:9-25:40
 39            android:name="com.example.jobposter.JobPoster_profile"
-39-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:24:13-46
+39-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:24:13-46
 40            android:exported="false" />
-40-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:25:13-37
+40-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:25:13-37
 41        <activity
-41-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:26:9-28:40
+41-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:26:9-28:40
 42            android:name="com.example.jobposter.JobPoster_login"
-42-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:27:13-44
+42-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:27:13-44
 43            android:exported="false" />
-43-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:28:13-37
+43-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:28:13-37
 44        <activity
-44-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:29:9-37:20
+44-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:29:9-37:20
 45            android:name="com.example.jobposter.MainActivity"
-45-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:30:13-41
+45-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:30:13-41
 46            android:exported="true" >
-46-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:31:13-36
+46-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:31:13-36
 47            <intent-filter>
-47-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:32:13-36:29
+47-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:32:13-36:29
 48                <action android:name="android.intent.action.MAIN" />
-48-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:33:17-69
-48-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:33:25-66
+48-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:33:17-69
+48-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:33:25-66
 49
 50                <category android:name="android.intent.category.LAUNCHER" />
-50-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:35:17-77
-50-->F:\Code\HTML\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:35:27-74
+50-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:35:17-77
+50-->C:\Users\ACER\AndroidStudioProjects\MAD_PoddiWadak\app\src\main\AndroidManifest.xml:35:27-74
 51            </intent-filter>
 52        </activity>
 53
 54        <provider
-54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\66814d0c9c223a08105bc116aeb53dd5\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ACER\.gradle\caches\transforms-3\66814d0c9c223a08105bc116aeb53dd5\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 55            android:name="androidx.startup.InitializationProvider"
-55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\66814d0c9c223a08105bc116aeb53dd5\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ACER\.gradle\caches\transforms-3\66814d0c9c223a08105bc116aeb53dd5\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
 56            android:authorities="com.example.jobposter.androidx-startup"
-56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\66814d0c9c223a08105bc116aeb53dd5\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ACER\.gradle\caches\transforms-3\66814d0c9c223a08105bc116aeb53dd5\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
 57            android:exported="false" >
-57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\66814d0c9c223a08105bc116aeb53dd5\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ACER\.gradle\caches\transforms-3\66814d0c9c223a08105bc116aeb53dd5\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
 58            <meta-data
-58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\66814d0c9c223a08105bc116aeb53dd5\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ACER\.gradle\caches\transforms-3\66814d0c9c223a08105bc116aeb53dd5\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
 59                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\66814d0c9c223a08105bc116aeb53dd5\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ACER\.gradle\caches\transforms-3\66814d0c9c223a08105bc116aeb53dd5\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
 60                android:value="androidx.startup" />
-60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\66814d0c9c223a08105bc116aeb53dd5\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ACER\.gradle\caches\transforms-3\66814d0c9c223a08105bc116aeb53dd5\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 61            <meta-data
-61-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ADMIN\.gradle\caches\transforms-3\d64e7ca6b93f4a6c092b1dd37cf249d6\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+61-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ACER\.gradle\caches\transforms-3\d64e7ca6b93f4a6c092b1dd37cf249d6\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
 62                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-62-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ADMIN\.gradle\caches\transforms-3\d64e7ca6b93f4a6c092b1dd37cf249d6\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+62-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ACER\.gradle\caches\transforms-3\d64e7ca6b93f4a6c092b1dd37cf249d6\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
 63                android:value="androidx.startup" />
-63-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ADMIN\.gradle\caches\transforms-3\d64e7ca6b93f4a6c092b1dd37cf249d6\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+63-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ACER\.gradle\caches\transforms-3\d64e7ca6b93f4a6c092b1dd37cf249d6\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
 64        </provider>
 65    </application>
 66
