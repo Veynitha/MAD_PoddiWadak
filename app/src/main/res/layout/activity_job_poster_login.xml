@@ -52,7 +52,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/inputName"
+        android:id="@+id/et_FullName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -69,7 +69,7 @@
         app:layout_constraintTop_toBottomOf="@+id/view2" />
 
     <EditText
-        android:id="@+id/inputPassword"
+        android:id="@+id/et_Password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -84,10 +84,10 @@
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputName" />
+        app:layout_constraintTop_toBottomOf="@+id/et_FullName" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_Login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -100,10 +100,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/et_Password" />
 
     <TextView
-        android:id="@+id/accountCreatelink"
+        android:id="@+id/tv_createAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -114,7 +114,7 @@
         android:textColor="@color/Secondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Login"
         tools:text="Create Account?" />
 
     <TextView
@@ -142,14 +142,14 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toStartOf="@+id/jobSeeker"
+        app:layout_constraintEnd_toStartOf="@+id/tvJobSeeker"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/jobLister"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.425" />
 
     <TextView
-        android:id="@+id/jobSeeker"
+        android:id="@+id/tvJobSeeker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/jobseeker"
@@ -164,10 +164,11 @@
         app:layout_constraintVertical_bias="0.425" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="413dp"
         android:layout_height="55dp"
-        android:orientation="horizontal"
 
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
