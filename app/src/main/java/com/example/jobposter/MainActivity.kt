@@ -21,15 +21,16 @@ class MainActivity : AppCompatActivity() {
         val feedbackButton = findViewById<Button>(R.id.btn_More)
 
         homeButton.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
         notifyButton.setOnClickListener{
-            val intent = Intent(this, Job_Poster_register::class.java)
+            val intent = Intent(this, Notification::class.java)
             startActivity(intent)
         }
+
         jobsButton.setOnClickListener{
-            val intent = Intent(this, Job_page::class.java)
+            val intent = Intent(this, Job_Poster_register::class.java)
             startActivity(intent)
         }
         profileButton.setOnClickListener{

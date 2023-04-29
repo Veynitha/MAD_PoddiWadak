@@ -11,4 +11,65 @@
        android:layout_height="match_parent"
        android:id="@+id/recyclerView"/>
 
+   <LinearLayout
+       android:layout_width="413dp"
+       android:layout_height="55dp"
+       android:orientation="horizontal"
+
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.998">
+
+      <Button
+          android:id="@+id/btn_Home"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@color/Primary"
+          android:textColor="@color/white"
+          android:drawableTop="@drawable/ic_smallhome"
+          android:text="Home" />
+
+      <Button
+          android:id="@+id/btn_Notification"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@color/Primary"
+          android:textColor="@color/white"
+          android:drawableTop="@drawable/nav_notification"
+          android:text="Notifi" />
+
+      <Button
+          android:id="@+id/btn_Jobs"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@color/Primary"
+          android:textColor="@color/white"
+          android:drawableTop="@drawable/baseline_business_center_24"
+          android:text="Job" />
+
+      <Button
+          android:id="@+id/btn_Profile"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@color/Primary"
+          android:textColor="@color/white"
+          android:drawableTop="@drawable/nav_profile"
+          android:text="Profile" />
+
+      <Button
+          android:id="@+id/btn_More"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@color/Primary"
+          android:textColor="@color/white"
+          android:drawableTop="@drawable/baseline_list_24"
+          android:text="More" />
+   </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="Primary">#103c84</color>
-    <color name="Secondary">#e8047c</color>
+    <color name="Secondary">#0B2447</color>
     <color name="black">#FF000000</color>
-    <color name="button">#e8047c</color>
+    <color name="button">#576CBC</color>
     <color name="grey">#808080</color>
     <color name="white">#FFFFFFFF</color>
     <string name="already_have_an_account">Already have an account?</string>

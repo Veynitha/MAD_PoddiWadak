@@ -2717,6 +2717,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable home
 drawable ic_arrow_back_black_24
 drawable ic_arrowback
 drawable ic_baseline
@@ -2819,6 +2820,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable podi_wadak
 drawable round_border
 drawable round_button
 drawable selector
@@ -2900,6 +2902,7 @@ id actions
 id activity_chooser_view_content
 id add
 id addJob
+id add_notifi
 id alertTitle
 id aligned
 id all
@@ -2932,6 +2935,8 @@ id btn_Jobs
 id btn_More
 id btn_Notification
 id btn_Profile
+id but_edit
+id but_first
 id button2
 id buttonPanel
 id cache_measures
@@ -3061,6 +3066,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView2
 id image_back
 id image_profile
 id immediateStop
@@ -3068,7 +3074,9 @@ id included
 id indeterminate
 id info
 id inputEmail
+id inputJobTitel
 id inputName
+id inputNotification
 id inputPassword
 id inputPhoneNumber
 id invisible
@@ -3088,6 +3096,7 @@ id line1
 id line3
 id linear
 id linearLayout
+id linearLayout2
 id listMode
 id list_item
 id m3_side_sheet
@@ -3191,6 +3200,7 @@ id postLayout
 id pressed
 id progress_circular
 id progress_horizontal
+id putNotification
 id radio
 id ratio
 id rectangles
@@ -3302,7 +3312,10 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView1
 id textView2
+id textView3
+id textView4
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3348,6 +3361,8 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id viweHotJob
+id viweJob
 id west
 id withText
 id with_icon
@@ -3463,12 +3478,17 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_first_page
+layout activity_home
 layout activity_insert_job
 layout activity_job_page
 layout activity_job_poster_login
 layout activity_job_poster_profile
 layout activity_job_poster_register
 layout activity_main
+layout activity_notification
+layout activity_notification_add
+layout activity_notification_edit
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3548,6 +3568,7 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap podi_wadak
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description

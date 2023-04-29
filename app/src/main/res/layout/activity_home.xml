@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="159dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="351dp"
+        android:layout_height="60dp"
+        android:text="Daily updated Job vacancy portal in Sri Lanka"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="381dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="9dp"
+        android:text="We receive new Job Vacancies everyday!. Currently we have more job vacancies in Sri Lanka."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <Button
+        android:id="@+id/viweJob"
+        android:layout_width="336dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="#031E4C"
+        android:text="Viwe Jobs"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    <Button
+        android:id="@+id/viweHotJob"
+        android:layout_width="336dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="#022867"
+        android:text="Viwe Hot Jobs"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/addJob"
+        android:layout_width="336dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="#0A429F"
+        android:text="Add a New Job"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    <Button
+        android:id="@+id/putNotification"
+        android:layout_width="336dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="290dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="#3271D8"
+        android:text="Put Notification"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.998">
+
+        <Button
+            android:id="@+id/btn_Home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Primary"
+            android:drawableTop="@drawable/ic_smallhome"
+            android:text="Home"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_Notification"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Primary"
+            android:drawableTop="@drawable/nav_notification"
+            android:text="Notifi"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_Jobs"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Primary"
+            android:drawableTop="@drawable/baseline_business_center_24"
+            android:text="Job"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Primary"
+            android:drawableTop="@drawable/nav_profile"
+            android:text="Profile"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_More"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Primary"
+            android:drawableTop="@drawable/baseline_list_24"
+            android:text="More"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

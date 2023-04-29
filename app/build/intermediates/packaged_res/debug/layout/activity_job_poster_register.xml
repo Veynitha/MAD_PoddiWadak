@@ -73,7 +73,7 @@
         android:layout_height="32dp"
         android:layout_marginTop="20dp"
         android:text="JobLister"
-        android:textColor="@color/Secondary"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view"
@@ -223,6 +223,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="413dp"
         android:layout_height="55dp"
+
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -237,7 +238,8 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/ic_smallhome"
-            android:text="Button" />
+            android:text="Home"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/btn_Notification"
@@ -246,7 +248,8 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/nav_notification"
-            android:text="Button" />
+            android:text="Notifi"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/btn_Jobs"
@@ -255,7 +258,8 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/baseline_business_center_24"
-            android:text="Button" />
+            android:text="Job"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/btn_Profile"
@@ -264,7 +268,8 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/nav_profile"
-            android:text="Button" />
+            android:text="Profile"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/btn_More"
@@ -273,7 +278,8 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/baseline_list_24"
-            android:text="Button" />
+            android:text="More"
+            android:textColor="@color/white" />
     </LinearLayout>
 
 
