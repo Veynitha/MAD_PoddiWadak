@@ -2727,6 +2727,7 @@ drawable avd_show_password
 drawable baseline_business_center_24
 drawable baseline_email_24
 drawable baseline_list_24
+drawable baseline_work_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2941,7 +2942,6 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id addJob
 id adjust_height
 id adjust_width
 id alertTitle
@@ -2977,12 +2977,17 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btnRegister
+id btn_AddJob
+id btn_DeleteUser
 id btn_Home
+id btn_InsertJob
 id btn_Jobs
 id btn_Login
 id btn_More
 id btn_Notification
 id btn_Profile
+id btn_back
+id btn_editProfile
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3000,6 +3005,7 @@ id checkbox
 id checked
 id chronometer
 id circle_center
+id cl_header
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -3056,13 +3062,6 @@ id easeIn
 id easeInOut
 id easeOut
 id east
-id editTextPhone
-id editTextTextEmailAddress
-id editTextTextPassword
-id editTextTextPersonName2
-id editTextTextPersonName3
-id editTextTextPersonName4
-id editTextTextPersonName5
 id edit_query
 id elastic
 id embed
@@ -3071,10 +3070,15 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id etEmail
-id etFullName
 id etPhone
 id et_FullName
+id et_JobDescription
+id et_JobPayment
+id et_JobTitle
+id et_JobType
 id et_Password
+id et_editFullName
+id et_editPhone
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3127,6 +3131,7 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id iv_Profile
 id iv_Profilepic
 id jobLister
 id jumpToEnd
@@ -3250,6 +3255,7 @@ id ratio
 id rectangles
 id recyclerView
 id registertxt
+id relativeLayout
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3331,7 +3337,6 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
-id submitbtn
 id supportScrollUp
 id tabMode
 id tag_accessibility_actions
@@ -3384,6 +3389,11 @@ id transition_transform
 id triangle
 id tvAccountLogin
 id tvJobSeeker
+id tv_EditProfile
+id tv_Email
+id tv_FullName
+id tv_Jobs
+id tv_Phone
 id tv_createAccount
 id txtSep
 id unchecked
@@ -3392,7 +3402,6 @@ id unlabeled
 id up
 id updateAccount
 id useLogo
-id username
 id vertical_only
 id view
 id view2
@@ -3523,6 +3532,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_insert_job
 layout activity_job_page
+layout activity_job_poster_edit_profile
 layout activity_job_poster_login
 layout activity_job_poster_profile
 layout activity_job_poster_register

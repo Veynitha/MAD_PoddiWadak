@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.example.jobposter.databinding.ActivityJobPosterProfileBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -31,10 +32,31 @@ class JobPoster_profile : AppCompatActivity() {
 
         //------edit account implementation
         binding.updateAccount.setOnClickListener{
-
-
+            startActivity(Intent(this@JobPoster_profile, Job_Poster_editProfile::class.java))
+            finish()
         }
 
+        //-----delete account implementation
+        binding.btnDeleteUser.setOnClickListener{
+            val user = firebaseAuth.currentUser
+            user?.delete()?.addOnCompleteListener {
+                if(it.isSuccessful){
+                    //account is deleted
+                    Toast.makeText(this,"Account was successfully deleted", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this@JobPoster_profile, JobPoster_login::class.java))
+                    finish()
+                }
+                else{
+                    //account failed to delete
+                    Toast.makeText(this,"Account failed to be deleted", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+
+        //--------add job navigation implementation----------//
+        binding.btnAddJob.setOnClickListener {
+            startActivity(Intent(this, Insert_Job::class.java))
+        }
 
         //-----------nav bar implementation-------------------//
         binding.btnHome.setOnClickListener{
@@ -62,20 +84,26 @@ class JobPoster_profile : AppCompatActivity() {
 
     private fun loadUserInfo() {
         //db reference to get user info
-        var ref = FirebaseDatabase.getInstance().getReference("Users")
+        var ref = FirebaseDatabase.getInstance("https://podiwadak-a4d20-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Users")
         ref.child(firebaseAuth.uid!!)
             .addValueEventListener(object: ValueEventListener{
                 override fun onDataChange(snapshot: DataSnapshot) {
                    //getting user info
-                   val email = "${snapshot.child("email")}"
-                   val name = "${snapshot.child("name")}"
-                   val profileImage = "${snapshot.child("profileImage")}"
-                   val phone = "${snapshot.child("phone")}"
-                   val password = "${snapshot.child("password")}"
-                   val uid = "${snapshot.child("uid")}"
+                   var email = "${snapshot.child("email").value}"
+                   var name = "${snapshot.child("name").value}"
+                   val profileImage = "${snapshot.child("profileImage").value}"
+                   val phone = "${snapshot.child("phone").value}"
+                   val password = "${snapshot.child("password").value}"
+                   val uid = "${snapshot.child("uid").value}"
 
                    //convert timestamp to proper date format
-                   //val formattedDate = MyApplication.formatTimeStamp(timestamp.toLong())
+
+
+                    //set data to page
+                    binding.tvFullName.text = name
+                    binding.tvEmail.text = email
+                    binding.tvPhone.text = phone
+
 
                    //set image
                    //glide library to get images from firebase

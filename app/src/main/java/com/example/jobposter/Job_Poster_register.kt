@@ -43,14 +43,8 @@ class Job_Poster_register : AppCompatActivity() {
         binding.tvAccountLogin.setOnClickListener{
 
             startActivity(Intent(this@Job_Poster_register, JobPoster_login::class.java))
-
+            finish()
         }
-
-
-
-
-
-
 
         //---------------bottom navbar implementation--------------//
         binding.btnHome.setOnClickListener{

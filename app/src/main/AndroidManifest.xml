@@ -12,6 +12,9 @@
         android:theme="@style/Theme.JobPoster"
         tools:targetApi="31">
         <activity
+            android:name=".Job_Poster_editProfile"
+            android:exported="false" />
+        <activity
             android:name=".Insert_Job"
             android:exported="false" />
         <activity

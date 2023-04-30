@@ -6,6 +6,11 @@ import android.os.Bundle
 import android.widget.Button
 
 class Insert_Job : AppCompatActivity() {
+
+    //view binding
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_insert_job)
@@ -16,6 +21,12 @@ class Insert_Job : AppCompatActivity() {
         val profileButton = findViewById<Button>(R.id.btn_Profile)
         val feedbackButton = findViewById<Button>(R.id.btn_More)
 
+
+
+
+
+
+        //--------------bottom nav
         homeButton.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
