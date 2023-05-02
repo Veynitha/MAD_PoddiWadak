@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NotificationAdd">
+    tools:context=".NotificationEditView">
 
    <View
        android:id="@+id/view"
@@ -30,7 +30,7 @@
        android:layout_width="262dp"
        android:layout_height="44dp"
        android:layout_marginTop="32dp"
-       android:text="Notification Area"
+       android:text="Edit Notification Area"
        android:textColor="@color/white"
        android:textSize="24sp"
        android:textStyle="bold"
@@ -39,90 +39,95 @@
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="parent" />
 
-   <EditText
-       android:id="@+id/inputName"
+   <TextView
+       android:id="@+id/tvName"
        android:layout_width="347dp"
        android:layout_height="wrap_content"
-       android:layout_marginTop="40dp"
+       android:layout_marginTop="30dp"
        android:background="@drawable/round_border"
        android:drawableLeft="@drawable/ic_smallperson"
        android:drawablePadding="16dp"
        android:ems="10"
        android:hint="Company / Employer Name"
        android:inputType="text"
+       android:textSize="16dp"
        android:padding="16dp"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toBottomOf="@+id/view2" />
 
-   <EditText
-       android:id="@+id/inputEmail"
+   <TextView
+       android:id="@+id/tvEmail"
        android:layout_width="347dp"
        android:layout_height="wrap_content"
-       android:layout_marginTop="10dp"
+       android:layout_marginTop="20dp"
        android:background="@drawable/round_border"
        android:drawableLeft="@drawable/ic_email"
        android:drawablePadding="16dp"
        android:ems="10"
        android:hint="Email"
        android:inputType="textEmailAddress"
+       android:textSize="16dp"
        android:padding="16dp"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintHorizontal_bias="0.5"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/inputName" />
+       app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
-   <EditText
-       android:id="@+id/inputPhoneNumber"
+   <TextView
+       android:id="@+id/tvPhone"
        android:layout_width="347dp"
        android:layout_height="wrap_content"
-       android:layout_marginTop="10dp"
+       android:layout_marginTop="20dp"
        android:background="@drawable/round_border"
        android:drawableLeft="@drawable/ic_smallphone"
        android:drawablePadding="16dp"
        android:ems="10"
-       android:hint="PhoneNumber"
+       android:hint="Phone Number"
+       android:textSize="16dp"
        android:inputType="text"
        android:padding="16dp"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintHorizontal_bias="0.5"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
+       app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
 
 
-   <EditText
-       android:id="@+id/inputJobTitel"
+   <TextView
+       android:id="@+id/tvJobTitel"
        android:layout_width="347dp"
        android:layout_height="wrap_content"
-       android:layout_marginTop="10dp"
+       android:layout_marginTop="20dp"
        android:layout_marginBottom="12dp"
        android:background="@drawable/round_border"
        android:drawablePadding="16dp"
        android:ems="10"
        android:hint="Titel"
        android:inputType="text"
+       android:textSize="16dp"
        android:padding="16dp"
-       app:layout_constraintBottom_toTopOf="@+id/inputNotification"
+       app:layout_constraintBottom_toTopOf="@+id/tvNotification"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintHorizontal_bias="0.5"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/inputPhoneNumber" />
+       app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
 
-   <EditText
-       android:id="@+id/inputNotification"
+   <TextView
+       android:id="@+id/tvNotification"
        android:layout_width="349dp"
        android:layout_height="83dp"
-       android:layout_marginTop="10dp"
+       android:layout_marginTop="20dp"
        android:background="@drawable/round_border"
        android:drawablePadding="16dp"
        android:ems="10"
        android:hint="Type your Notification here"
+       android:textSize="16dp"
        android:inputType="text"
        android:padding="16dp"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintHorizontal_bias="0.516"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/inputJobTitel" />
+       app:layout_constraintTop_toBottomOf="@+id/tvJobTitel" />
 
    <Button
        android:id="@+id/btnUpdate"
@@ -139,14 +144,14 @@
        android:textStyle="bold"
        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/inputNotification" />
+       app:layout_constraintTop_toBottomOf="@+id/tvNotification" />
 
    <Button
        android:id="@+id/btnDelete"
        android:layout_width="127dp"
        android:layout_height="48dp"
        android:layout_marginTop="35dp"
-       android:layout_marginEnd="50dp"
+       android:layout_marginEnd="48dp"
        android:layout_marginBottom="35dp"
        android:background="@drawable/round_border"
        android:backgroundTint="@color/delete"
@@ -156,7 +161,8 @@
        android:textStyle="bold"
        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
        app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/inputNotification" />
+       app:layout_constraintTop_toBottomOf="@+id/tvNotification"
+       app:layout_constraintVertical_bias="0.473" />
 
    <LinearLayout
        android:id="@+id/linearLayout2"

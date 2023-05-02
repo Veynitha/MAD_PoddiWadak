@@ -43,6 +43,7 @@ id addJob
 id btnAdd
 id btnDelete
 id btnUpdate
+id btnUpdateNoti
 id btn_Home
 id btn_Jobs
 id btn_More
@@ -74,6 +75,7 @@ id jobLister
 id jobSeeker
 id linearLayout
 id linearLayout2
+id notifyEditView
 id notifyView
 id putNotification
 id recyclerView
@@ -93,6 +95,11 @@ id tvName
 id tvNotification
 id tvPhone
 id txtSep
+id upEmail
+id upJobTitel
+id upName
+id upNotification
+id upPhone
 id updateAccount
 id username
 id view
@@ -112,6 +119,7 @@ layout activity_notification_add
 layout activity_notification_edit
 layout activity_notification_edit_view
 layout activity_notification_list_itme
+layout activity_notification_update
 mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap podi_wadak

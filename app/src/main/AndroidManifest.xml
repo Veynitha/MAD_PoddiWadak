@@ -24,6 +24,9 @@
             android:name=".NotificationEdit"
             android:exported="false" />
         <activity
+            android:name=".NotificationEditView"
+            android:exported="false" />
+        <activity
             android:name=".Job_page"
             android:exported="false" />
         <activity

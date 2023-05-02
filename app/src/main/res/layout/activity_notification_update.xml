@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <View
+       android:id="@+id/view"
+       android:layout_width="0dp"
+       android:layout_height="60dp"
+       android:background="@color/Primary"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <View
+       android:id="@+id/view2"
+       android:layout_width="0dp"
+       android:layout_height="100dp"
+       android:background="@drawable/wave"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="1.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/view" />
+
+   <TextView
+       android:id="@+id/textView3"
+       android:layout_width="328dp"
+       android:layout_height="43dp"
+       android:layout_marginTop="32dp"
+       android:text="Update Notification Area"
+       android:textColor="@color/white"
+       android:textSize="24sp"
+       android:textStyle="bold"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.255"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <EditText
+       android:id="@+id/upName"
+       android:layout_width="347dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="30dp"
+       android:background="@drawable/round_border"
+       android:drawableLeft="@drawable/ic_smallperson"
+       android:drawablePadding="16dp"
+       android:ems="10"
+       android:hint="Company / Employer Name"
+       android:inputType="text"
+       android:textSize="16dp"
+       android:padding="16dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+   <EditText
+       android:id="@+id/upEmail"
+       android:layout_width="347dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:background="@drawable/round_border"
+       android:drawableLeft="@drawable/ic_email"
+       android:drawablePadding="16dp"
+       android:ems="10"
+       android:hint="Email"
+       android:inputType="textEmailAddress"
+       android:textSize="16dp"
+       android:padding="16dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.5"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/upName" />
+
+   <EditText
+       android:id="@+id/upPhone"
+       android:layout_width="347dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:background="@drawable/round_border"
+       android:drawableLeft="@drawable/ic_smallphone"
+       android:drawablePadding="16dp"
+       android:ems="10"
+       android:hint="Phone Number"
+       android:textSize="16dp"
+       android:inputType="text"
+       android:padding="16dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.5"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/upEmail" />
+
+
+   <EditText
+       android:id="@+id/upJobTitel"
+       android:layout_width="347dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:layout_marginBottom="12dp"
+       android:background="@drawable/round_border"
+       android:drawablePadding="16dp"
+       android:ems="10"
+       android:hint="Titel"
+       android:inputType="text"
+       android:textSize="16dp"
+       android:padding="16dp"
+       app:layout_constraintBottom_toTopOf="@+id/upNotification"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.5"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/upPhone" />
+
+   <EditText
+       android:id="@+id/upNotification"
+       android:layout_width="349dp"
+       android:layout_height="83dp"
+       android:layout_marginTop="20dp"
+       android:background="@drawable/round_border"
+       android:drawablePadding="16dp"
+       android:ems="10"
+       android:hint="Type your Notification here"
+       android:textSize="16dp"
+       android:inputType="text"
+       android:padding="16dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.516"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/upJobTitel" />
+
+
+   <Button
+       android:id="@+id/btnUpdateNoti"
+       android:layout_width="160dp"
+       android:layout_height="48dp"
+       android:layout_marginTop="35dp"
+       android:layout_marginBottom="35dp"
+       android:background="@drawable/round_border"
+       android:backgroundTint="@color/Secondary"
+       android:text="Update"
+       android:textColor="@color/white"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/upNotification"
+       app:layout_constraintVertical_bias="0.105" />
+
+   <LinearLayout
+       android:id="@+id/linearLayout2"
+       android:layout_width="413dp"
+       android:layout_height="55dp"
+
+       android:orientation="horizontal"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.998">
+
+      <Button
+          android:id="@+id/btn_Home"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@color/Primary"
+          android:drawableTop="@drawable/ic_smallhome"
+          android:text="Home"
+          android:textColor="@color/white" />
+
+      <Button
+          android:id="@+id/btn_Notification"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@color/Primary"
+          android:drawableTop="@drawable/nav_notification"
+          android:text="Notifi"
+          android:textColor="@color/white" />
+
+      <Button
+          android:id="@+id/btn_Jobs"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@color/Primary"
+          android:drawableTop="@drawable/baseline_business_center_24"
+          android:text="Job"
+          android:textColor="@color/white" />
+
+      <Button
+          android:id="@+id/btn_Profile"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@color/Primary"
+          android:drawableTop="@drawable/nav_profile"
+          android:text="Profile"
+          android:textColor="@color/white" />
+
+      <Button
+          android:id="@+id/btn_More"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@color/Primary"
+          android:drawableTop="@drawable/baseline_list_24"
+          android:text="More"
+          android:textColor="@color/white" />
+   </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

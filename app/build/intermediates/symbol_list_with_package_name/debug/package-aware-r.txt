@@ -2983,6 +2983,7 @@ id bounceStart
 id btnAdd
 id btnDelete
 id btnUpdate
+id btnUpdateNoti
 id btn_Home
 id btn_Jobs
 id btn_More
@@ -3234,6 +3235,7 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id notifyEditView
 id notifyView
 id off
 id on
@@ -3411,6 +3413,11 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id upEmail
+id upJobTitel
+id upName
+id upNotification
+id upPhone
 id updateAccount
 id useLogo
 id username
@@ -3557,6 +3564,7 @@ layout activity_notification_add
 layout activity_notification_edit
 layout activity_notification_edit_view
 layout activity_notification_list_itme
+layout activity_notification_update
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

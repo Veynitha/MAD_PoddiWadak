@@ -4,16 +4,12 @@
         "source": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-35:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.jobposter.app-merged_res-33:/layout_activity_notification_add.xml.flat",
-        "source": "com.example.jobposter.app-main-35:/layout/activity_notification_add.xml"
+        "merged": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-33:\\layout_activity_notification_edit.xml.flat",
+        "source": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-35:\\layout\\activity_notification_edit.xml"
     },
     {
         "merged": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-33:\\drawable_selector.xml.flat",
         "source": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-35:\\drawable\\selector.xml"
-    },
-    {
-        "merged": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-33:\\layout_activity_notification_edit.xml.flat",
-        "source": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-35:\\layout\\activity_notification_edit.xml"
     },
     {
         "merged": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-33:\\layout_activity_notification.xml.flat",
@@ -132,6 +128,10 @@
         "source": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-35:\\layout\\activity_job_poster_profile.xml"
     },
     {
+        "merged": "com.example.jobposter.app-merged_res-33:/layout_activity_first_page.xml.flat",
+        "source": "com.example.jobposter.app-main-35:/layout/activity_first_page.xml"
+    },
+    {
         "merged": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-35:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
@@ -146,6 +146,10 @@
     {
         "merged": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-33:\\drawable_nav_notification.xml.flat",
         "source": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-35:\\drawable\\nav_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-33:\\layout_activity_notification_update.xml.flat",
+        "source": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-35:\\layout\\activity_notification_update.xml"
     },
     {
         "merged": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-33:\\drawable_round_border.xml.flat",

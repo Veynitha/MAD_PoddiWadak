@@ -4,9 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -21,14 +19,14 @@ class NotificationEdit: AppCompatActivity() {
     private lateinit var dbRef : DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_notification)
+        setContentView(R.layout.activity_notification_edit)
 
-        notifyRecyclerView=findViewById(R.id.notifyView)
+        notifyRecyclerView=findViewById(R.id.notifyEditView)
         notifyRecyclerView.layoutManager = LinearLayoutManager(this)
         notifyRecyclerView.setHasFixedSize(true)
         tvLoadingData = findViewById(R.id.tvLoadingData)
 
-        notifyList = arrayListOf<NotificationDataClass>()
+        notifyList = arrayListOf <NotificationDataClass>()
         getNotificationData()
 
 //-----------------------------------toolbar button-----------------------------------------
@@ -69,7 +67,7 @@ class NotificationEdit: AppCompatActivity() {
         notifyRecyclerView.visibility = View.GONE
         tvLoadingData.visibility = View.VISIBLE
 
-        dbRef = FirebaseDatabase.getInstance().getReference("Notifications")
+        dbRef = FirebaseDatabase.getInstance("https://podiwadak-a4d20-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Notifications")
 
         dbRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -79,8 +77,27 @@ class NotificationEdit: AppCompatActivity() {
                         val notifyData = notifySnap.getValue(NotificationDataClass::class.java)
                         notifyList.add(notifyData!!)
                     }
-                    val mAdapter = NotifictionAdapter(notifyList)
+                    val mAdapter = NotifictionEditAdapter(notifyList)
                     notifyRecyclerView.adapter = mAdapter
+
+                    //-----------editview--------------
+                    mAdapter.setOnItemClickListener(object : NotifictionEditAdapter.onItemClickListener{
+                        override fun onItemClick(position: Int) {
+                            val intent = Intent (this@NotificationEdit, NotificationEditView::class.java)
+
+                            //put extras
+                            intent.putExtra("id", notifyList[position].id)
+                            intent.putExtra("name", notifyList[position].name)
+                            intent.putExtra("jobTitel", notifyList[position].jobTitel)
+                            intent.putExtra("phoneNumber", notifyList[position].phoneNumber)
+                            intent.putExtra("email", notifyList[position].email)
+                            intent.putExtra("notification", notifyList[position].notification)
+                            startActivity(intent)
+                        }
+
+                    })
+
+                    //-------------------------
 
                     notifyRecyclerView.visibility= View.VISIBLE
                     tvLoadingData.visibility= View.GONE
