@@ -3,8 +3,10 @@ package com.example.jobposter
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.FirebaseDatabase
 
@@ -26,9 +28,12 @@ class NotificationEditView : AppCompatActivity (){
             initView()
             setValuesToViews()
         //Update Button call------------------------------
+        btnUpdate.setOnClickListener{
+            openUpdateDialog(
+                intent.getStringExtra("id").toString(),
+            )
+        } //end update button ------------------------------
 
-
-        //end update button ------------------------------
 
         //Delete button call-------------------------------
         btnDelete.setOnClickListener {
@@ -97,9 +102,67 @@ class NotificationEditView : AppCompatActivity (){
     // End view data --------------------------------------
 
 
-    // Updata function-------------------------------------
+    // Start Updata function-------------------------------------
+    private fun openUpdateDialog(
+        id: String,
+    ){
+        val mDialog = AlertDialog.Builder(this)
+        val inflater = layoutInflater
+        val mDialogView = inflater.inflate(R.layout.activity_notification_update, null)
+
+        mDialog.setView(mDialogView)
+
+        val upName = mDialogView.findViewById<EditText>(R.id.upName)
+        val upEmail = mDialogView.findViewById<EditText>(R.id.upEmail)
+        val upPhone = mDialogView.findViewById<EditText>(R.id.upPhone)
+        val upJobTitel = mDialogView.findViewById<EditText>(R.id.upJobTitel)
+        val upNotification = mDialogView.findViewById<EditText>(R.id.upNotification)
+
+        val btnUpdateData = mDialogView.findViewById<Button>(R.id.btnUpdateData)
+
+        upName.setText(intent.getStringExtra("name").toString())
+        upEmail.setText(intent.getStringExtra("email").toString())
+        upPhone.setText(intent.getStringExtra("phoneNumber").toString())
+        upJobTitel.setText(intent.getStringExtra("jobTitel").toString())
+        upNotification.setText(intent.getStringExtra("notification").toString())
 
 
+        val alertDialog = mDialog.create()
+        alertDialog.show()
+
+        btnUpdateData.setOnClickListener{
+            updateNotifyData(
+                id,
+                upName.text.toString(),
+                upEmail.text.toString(),
+                upPhone.text.toString(),
+                upJobTitel.text.toString(),
+                upNotification.text.toString(),
+            )
+            Toast.makeText(applicationContext,"Notification Updated",Toast.LENGTH_LONG).show()
+
+            //setting updated data to textview
+            tvName.text = upName.text.toString()
+            tvJobTitel.text = upJobTitel.text.toString()
+            tvPhone.text = upPhone.text.toString()
+            tvEmail.text = upEmail.text.toString()
+            tvNotification.text = upNotification.text.toString()
+
+            alertDialog.dismiss()
+        }
+    }
+    private fun updateNotifyData(
+        id: String,
+        name: String,
+        email : String,
+        phoneNumber : String,
+        jobTitel : String,
+        notification : String
+    ){
+        val dbRef = FirebaseDatabase.getInstance("https://podiwadak-a4d20-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Notifications").child(id)
+        val notifyInfo = NotificationDataClass(id, name, email, phoneNumber, jobTitel, notification)
+        dbRef.setValue(notifyInfo)
+    }
     //end Updata -------------------------------------------
 
 

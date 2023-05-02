@@ -12,16 +12,16 @@
         "source": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-35:\\drawable\\selector.xml"
     },
     {
-        "merged": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-33:\\layout_activity_notification.xml.flat",
-        "source": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-35:\\layout\\activity_notification.xml"
+        "merged": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-33:\\layout_activity_insert_job.xml.flat",
+        "source": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-35:\\layout\\activity_insert_job.xml"
     },
     {
         "merged": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-33:\\mipmap-xxhdpi_podi_wadak.webp.flat",
         "source": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-35:\\mipmap-xxhdpi\\podi_wadak.webp"
     },
     {
-        "merged": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-33:\\layout_activity_insert_job.xml.flat",
-        "source": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-35:\\layout\\activity_insert_job.xml"
+        "merged": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-33:\\layout_activity_notification.xml.flat",
+        "source": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-35:\\layout\\activity_notification.xml"
     },
     {
         "merged": "C:\\Users\\My File\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-33:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
