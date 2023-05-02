@@ -1,11 +1,10 @@
-package com.example.jobposter
+package com.example.jobposter.activities
 
 import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
-import android.widget.Button
 import android.widget.Toast
 import com.example.jobposter.databinding.ActivityJobPosterRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -56,7 +55,7 @@ class Job_Poster_register : AppCompatActivity() {
             startActivity(intent)
         }
         binding.btnJobs.setOnClickListener{
-            val intent = Intent(this, Job_page::class.java)
+            val intent = Intent(this, Jobs_page::class.java)
             startActivity(intent)
         }
         binding.btnProfile.setOnClickListener{

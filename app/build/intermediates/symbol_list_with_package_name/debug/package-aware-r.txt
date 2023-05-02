@@ -3076,6 +3076,7 @@ id et_JobDescription
 id et_JobPayment
 id et_JobTitle
 id et_JobType
+id et_Location
 id et_Password
 id et_editFullName
 id et_editPhone
@@ -3253,7 +3254,6 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
-id recyclerView
 id registertxt
 id relativeLayout
 id reverseSawtooth
@@ -3263,6 +3263,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rv_Jobs
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3389,10 +3390,14 @@ id transition_transform
 id triangle
 id tvAccountLogin
 id tvJobSeeker
+id tvLoadingData
 id tv_EditProfile
 id tv_Email
 id tv_FullName
+id tv_JobLocation
+id tv_JobTitle
 id tv_Jobs
+id tv_Payment
 id tv_Phone
 id tv_createAccount
 id txtSep
@@ -3531,11 +3536,11 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_insert_job
-layout activity_job_page
 layout activity_job_poster_edit_profile
 layout activity_job_poster_login
 layout activity_job_poster_profile
 layout activity_job_poster_register
+layout activity_jobs_page
 layout activity_main
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -3555,6 +3560,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout job_list_item
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

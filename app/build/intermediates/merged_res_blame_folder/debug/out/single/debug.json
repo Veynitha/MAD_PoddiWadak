@@ -4,6 +4,10 @@
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-38:\\drawable\\ic_car.xml"
     },
     {
+        "merged": "com.example.jobposter.app-merged_res-36:/layout_activity_job_poster_login.xml.flat",
+        "source": "com.example.jobposter.app-main-38:/layout/activity_job_poster_login.xml"
+    },
+    {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-36:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-38:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
@@ -14,6 +18,10 @@
     {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-36:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-38:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-36:\\layout_activity_jobs_page.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-38:\\layout\\activity_jobs_page.xml"
     },
     {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-36:\\mipmap-mdpi_ic_launcher.webp.flat",
@@ -108,6 +116,10 @@
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-38:\\drawable\\ic_email.xml"
     },
     {
+        "merged": "com.example.jobposter.app-merged_res-36:/layout_activity_jobs_page.xml.flat",
+        "source": "com.example.jobposter.app-main-38:/layout/activity_jobs_page.xml"
+    },
+    {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-36:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-38:\\xml\\data_extraction_rules.xml"
     },
@@ -176,12 +188,20 @@
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-38:\\drawable\\selector.xml"
     },
     {
+        "merged": "com.example.jobposter.app-merged_res-36:/layout_activity_job_poster_edit_profile.xml.flat",
+        "source": "com.example.jobposter.app-main-38:/layout/activity_job_poster_edit_profile.xml"
+    },
+    {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-36:\\layout_activity_insert_job.xml.flat",
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-38:\\layout\\activity_insert_job.xml"
     },
     {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-36:\\layout_activity_job_poster_login.xml.flat",
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-38:\\layout\\activity_job_poster_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-36:\\layout_job_list_item.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-main-38:\\layout\\job_list_item.xml"
     },
     {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-36:\\mipmap-anydpi-v33_ic_launcher.xml.flat",
@@ -198,6 +218,10 @@
     {
         "merged": "com.example.jobposter.app-merged_res-36:/layout_activity_insert_job.xml.flat",
         "source": "com.example.jobposter.app-main-38:/layout/activity_insert_job.xml"
+    },
+    {
+        "merged": "com.example.jobposter.app-merged_res-36:/layout_activity_job_poster_register.xml.flat",
+        "source": "com.example.jobposter.app-main-38:/layout/activity_job_poster_register.xml"
     },
     {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.5\\com.example.jobposter.app-merged_res-36:\\drawable_baseline_email_24.xml.flat",

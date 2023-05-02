@@ -1,4 +1,4 @@
-package com.example.jobposter
+package com.example.jobposter.activities
 
 import android.app.Activity
 import android.content.ContentValues
@@ -14,6 +14,7 @@ import androidx.activity.result.ActivityResult
 import androidx.activity.result.ActivityResultCallback
 import androidx.activity.result.contract.ActivityResultContracts
 import com.bumptech.glide.Glide
+import com.example.jobposter.R
 import com.example.jobposter.databinding.ActivityJobPosterEditProfileBinding
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth

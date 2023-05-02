@@ -1,19 +1,16 @@
-package com.example.jobposter
+package com.example.jobposter.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.jobposter.R
 
-class Insert_Job : AppCompatActivity() {
-
-    //view binding
-
-
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_insert_job)
+        setContentView(R.layout.activity_main)
 
         val homeButton = findViewById<Button>(R.id.btn_Home)
         val notifyButton = findViewById<Button>(R.id.btn_Notification)
@@ -21,12 +18,6 @@ class Insert_Job : AppCompatActivity() {
         val profileButton = findViewById<Button>(R.id.btn_Profile)
         val feedbackButton = findViewById<Button>(R.id.btn_More)
 
-
-
-
-
-
-        //--------------bottom nav
         homeButton.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
@@ -36,7 +27,7 @@ class Insert_Job : AppCompatActivity() {
             startActivity(intent)
         }
         jobsButton.setOnClickListener{
-            val intent = Intent(this, Job_page::class.java)
+            val intent = Intent(this, Jobs_page::class.java)
             startActivity(intent)
         }
         profileButton.setOnClickListener{
@@ -47,5 +38,7 @@ class Insert_Job : AppCompatActivity() {
             val intent = Intent(this, Insert_Job::class.java)
             startActivity(intent)
         }
+
+
     }
 }
