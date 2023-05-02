@@ -18,7 +18,7 @@
    <View
        android:id="@+id/view2"
        android:layout_width="0dp"
-       android:layout_height="142dp"
+       android:layout_height="100dp"
        android:background="@drawable/wave"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintHorizontal_bias="0.5"
@@ -41,14 +41,14 @@
 
    <Button
        android:id="@+id/but_edit"
-       android:layout_width="166dp"
-       android:layout_height="53dp"
+       android:layout_width="160dp"
+       android:layout_height="51dp"
        android:layout_marginTop="76dp"
        android:background="@color/Primary"
        android:text="Edit Notification"
        android:textColor="@color/white"
        app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.971"
+       app:layout_constraintHorizontal_bias="0.932"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="parent" />
 
@@ -56,7 +56,7 @@
        android:id="@+id/textView4"
        android:layout_width="307dp"
        android:layout_height="48dp"
-       android:layout_marginTop="164dp"
+       android:layout_marginTop="180dp"
        android:text="Insert your Notification here..."
        android:textColor="#0C0909"
        android:textSize="20sp"
@@ -69,7 +69,7 @@
        android:id="@+id/inputName"
        android:layout_width="347dp"
        android:layout_height="wrap_content"
-       android:layout_marginTop="30dp"
+       android:layout_marginTop="80dp"
        android:background="@drawable/round_border"
        android:drawableLeft="@drawable/ic_smallperson"
        android:drawablePadding="16dp"
@@ -108,7 +108,7 @@
        android:drawablePadding="16dp"
        android:ems="10"
        android:hint="PhoneNumber"
-       android:inputType="textPersonName"
+       android:inputType="text"
        android:padding="16dp"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintHorizontal_bias="0.5"
@@ -125,8 +125,8 @@
        android:background="@drawable/round_border"
        android:drawablePadding="16dp"
        android:ems="10"
-       android:hint="Job Titel"
-       android:inputType="textPersonName"
+       android:hint="Titel"
+       android:inputType="text"
        android:padding="16dp"
        app:layout_constraintBottom_toTopOf="@+id/inputNotification"
        app:layout_constraintEnd_toEndOf="parent"
@@ -151,7 +151,7 @@
        app:layout_constraintTop_toBottomOf="@+id/inputJobTitel" />
 
    <Button
-       android:id="@+id/add_notifi"
+       android:id="@+id/btnAdd"
        android:layout_width="347dp"
        android:layout_height="wrap_content"
        android:layout_marginTop="32dp"
@@ -229,8 +229,6 @@
           android:text="More"
           android:textColor="@color/white" />
    </LinearLayout>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,18 +4,28 @@
     <color name="Secondary">#0B2447</color>
     <color name="black">#FF000000</color>
     <color name="button">#576CBC</color>
+    <color name="delete">#FF0026</color>
     <color name="grey">#808080</color>
+    <color name="notification">#ACBBF6</color>
     <color name="white">#FFFFFFFF</color>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="app_name">JobPoster</string>
+    <string name="default_web_client_id" translatable="false">747288091933-o8itgbtv621ne09meuod9k395vgai1bq.apps.googleusercontent.com</string>
     <string name="email">email@gmail.com</string>
+    <string name="firebase_database_url" translatable="false">https://podiwadak-a4d20-default-rtdb.asia-southeast1.firebasedatabase.app</string>
     <string name="full_name">Full Name</string>
+    <string name="gcm_defaultSenderId" translatable="false">747288091933</string>
+    <string name="google_api_key" translatable="false">AIzaSyBA4_s845K4Va29eIEbc5dwIvO1LylPBdM</string>
+    <string name="google_app_id" translatable="false">1:747288091933:android:15d30918d2e1aeb90415f4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBA4_s845K4Va29eIEbc5dwIvO1LylPBdM</string>
+    <string name="google_storage_bucket" translatable="false">podiwadak-a4d20.appspot.com</string>
     <string name="have_account">Already have an Account?</string>
     <string name="joblister">JobLister</string>
     <string name="jobseeker">JobSeeker</string>
     <string name="login">Login</string>
     <string name="password">cornypassword</string>
     <string name="phone_number">0772233445</string>
+    <string name="project_id" translatable="false">podiwadak-a4d20</string>
     <string name="register">Register</string>
     <style name="RoundCorner" parent="">
         <item name="cornerFamily">rounded</item>

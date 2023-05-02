@@ -44,6 +44,7 @@ class Home : AppCompatActivity() {
         putNotificationButton.setOnClickListener{
             val intent = Intent(this, NotificationAdd::class.java)
             startActivity(intent)
+
         }
     }
 }

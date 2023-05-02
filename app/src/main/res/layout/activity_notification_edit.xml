@@ -18,7 +18,7 @@
    <View
        android:id="@+id/view2"
        android:layout_width="0dp"
-       android:layout_height="130dp"
+       android:layout_height="100dp"
        android:background="@drawable/wave"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintHorizontal_bias="0.5"
@@ -30,7 +30,7 @@
        android:layout_width="262dp"
        android:layout_height="44dp"
        android:layout_marginTop="32dp"
-       android:text="Notification Area"
+       android:text="Edit Notification Area"
        android:textColor="@color/white"
        android:textSize="24sp"
        android:textStyle="bold"
@@ -40,14 +40,30 @@
        app:layout_constraintTop_toTopOf="parent" />
 
    <androidx.recyclerview.widget.RecyclerView
-       android:id="@+id/recyclerView"
-       android:layout_width="393dp"
+       android:id="@+id/notifyView"
+       android:layout_width="match_parent"
        android:layout_height="505dp"
-       android:layout_marginTop="-40dp"
+       android:layout_marginStart="5dp"
+       android:layout_marginTop="-80dp"
+       android:layout_marginEnd="5dp"
+       app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
        app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.5"
+       app:layout_constraintHorizontal_bias="1.0"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/view2" />
+       app:layout_constraintTop_toBottomOf="@+id/view2"
+       tools:listitem="@layout/activity_notification_list_itme" />
+
+   <TextView
+       android:id="@+id/tvLoadingData"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Loading data"
+       android:visibility="gone"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintEnd_toStartOf="@+id/view"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
 
    <LinearLayout
        android:id="@+id/linearLayout2"
