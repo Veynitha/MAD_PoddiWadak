@@ -6,6 +6,7 @@ data class JobModel(
     var jobType: String? = null,
     var payment: String? = null,
     var description: String? = null,
-    var location: String? = null
+    var location: String? = null,
+    var contactNo: String? = null
 
 )

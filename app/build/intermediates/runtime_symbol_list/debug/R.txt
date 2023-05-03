@@ -1909,6 +1909,7 @@ int color mtrl_textinput_disabled_color 0x7f050275
 int color mtrl_textinput_filled_box_default_background_color 0x7f050276
 int color mtrl_textinput_focused_box_stroke_color 0x7f050277
 int color mtrl_textinput_hovered_box_stroke_color 0x7f050278
+int color notification 0x7f050292
 int color notification_action_color_filter 0x7f050279
 int color notification_icon_bg_color 0x7f05027a
 int color primary_dark_material_dark 0x7f05027b
@@ -2726,6 +2727,8 @@ int drawable avd_show_password 0x7f070079
 int drawable baseline_business_center_24 0x7f07007a
 int drawable baseline_email_24 0x7f07007b
 int drawable baseline_list_24 0x7f07007c
+int drawable baseline_location_on_24 0x7f07010d
+int drawable baseline_monetization_on_24 0x7f07010e
 int drawable baseline_work_24 0x7f07010c
 int drawable btn_checkbox_checked_mtrl 0x7f07007d
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f07007e
@@ -3073,6 +3076,7 @@ int id etPhone 0x7f0800ca
 int id et_FullName 0x7f0800cb
 int id et_JobDescription 0x7f08022e
 int id et_JobPayment 0x7f08022f
+int id et_JobPhone 0x7f080239
 int id et_JobTitle 0x7f080230
 int id et_JobType 0x7f080231
 int id et_Location 0x7f080233
@@ -3390,6 +3394,7 @@ int id triangle 0x7f0801ff
 int id tvAccountLogin 0x7f080200
 int id tvJobSeeker 0x7f080201
 int id tvLoadingData 0x7f080235
+int id tv_ContactNumber 0x7f08023a
 int id tv_EditProfile 0x7f08022a
 int id tv_Email 0x7f080220
 int id tv_FullName 0x7f080221
@@ -3399,6 +3404,11 @@ int id tv_Jobs 0x7f080222
 int id tv_Payment 0x7f080238
 int id tv_Phone 0x7f080223
 int id tv_createAccount 0x7f080202
+int id tv_jobDescription 0x7f08023b
+int id tv_jobLocation 0x7f08023c
+int id tv_jobPayment 0x7f08023d
+int id tv_jobTitle 0x7f08023e
+int id tv_jobType 0x7f08023f
 int id txtSep 0x7f080203
 int id unchecked 0x7f080204
 int id uniform 0x7f080205
@@ -3535,6 +3545,7 @@ int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_insert_job 0x7f0b001c
+int layout activity_job_details 0x7f0b0074
 int layout activity_job_poster_edit_profile 0x7f0b0071
 int layout activity_job_poster_login 0x7f0b001e
 int layout activity_job_poster_profile 0x7f0b001f

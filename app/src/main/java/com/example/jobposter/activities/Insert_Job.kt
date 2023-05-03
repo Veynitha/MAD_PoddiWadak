@@ -65,6 +65,7 @@ class Insert_Job : AppCompatActivity() {
         val payment = binding.etJobPayment.text.toString()
         val description = binding.etJobDescription.text.toString()
         val location = binding.etLocation.text.toString()
+        val contactNo = binding.etJobPhone.text.toString()
         //validations for fields
         if(jobTitle.isEmpty()){
             binding.etJobTitle.error = "Please enter name"
@@ -81,10 +82,13 @@ class Insert_Job : AppCompatActivity() {
         if (location.isEmpty()){
             binding.etLocation.error = "Please enter Location"
         }
+        if (contactNo.isEmpty()){
+            binding.etJobPhone.error = "Please enter Location"
+        }
         //setting key and object
         val jobId = dbRef.push().key!!
 
-        val job = JobModel(jobId, jobTitle, jobType, payment, description, location)
+        val job = JobModel(jobId, jobTitle, jobType, payment, description, location, contactNo)
         //sending data to database
         dbRef = FirebaseDatabase.getInstance("https://podiwadak-a4d20-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Jobs")
         dbRef.child(jobId!!).setValue(job)

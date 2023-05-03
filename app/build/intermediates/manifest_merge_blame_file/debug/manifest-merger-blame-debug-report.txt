@@ -60,26 +60,26 @@
 34-->F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:12:9-47
 35        <activity
 35-->F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:14:9-16:40
-36            android:name="com.example.jobposter.activities.Jobs_page"
-36-->F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:15:13-49
+36            android:name="com.example.jobposter.activities.JobDetails"
+36-->F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:15:13-50
 37            android:exported="false" />
 37-->F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:16:13-37
 38        <activity
 38-->F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:17:9-19:40
-39            android:name="com.example.jobposter.activities.Job_Poster_editProfile"
-39-->F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:18:13-62
+39            android:name="com.example.jobposter.activities.Jobs_page"
+39-->F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:18:13-49
 40            android:exported="false" />
 40-->F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:19:13-37
 41        <activity
 41-->F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:20:9-22:40
-42            android:name="com.example.jobposter.activities.Insert_Job"
-42-->F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:21:13-50
+42            android:name="com.example.jobposter.activities.Job_Poster_editProfile"
+42-->F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:21:13-62
 43            android:exported="false" />
 43-->F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:22:13-37
 44        <activity
 44-->F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:23:9-25:40
-45            android:name="com.example.jobposter.Job_page"
-45-->F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:24:13-37
+45            android:name="com.example.jobposter.activities.Insert_Job"
+45-->F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:24:13-50
 46            android:exported="false" />
 46-->F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:25:13-37
 47        <activity

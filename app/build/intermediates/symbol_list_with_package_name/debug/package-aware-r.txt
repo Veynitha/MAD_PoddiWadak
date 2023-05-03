@@ -1910,6 +1910,7 @@ color mtrl_textinput_disabled_color
 color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
+color notification
 color notification_action_color_filter
 color notification_icon_bg_color
 color primary_dark_material_dark
@@ -2727,6 +2728,8 @@ drawable avd_show_password
 drawable baseline_business_center_24
 drawable baseline_email_24
 drawable baseline_list_24
+drawable baseline_location_on_24
+drawable baseline_monetization_on_24
 drawable baseline_work_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3074,6 +3077,7 @@ id etPhone
 id et_FullName
 id et_JobDescription
 id et_JobPayment
+id et_JobPhone
 id et_JobTitle
 id et_JobType
 id et_Location
@@ -3391,6 +3395,7 @@ id triangle
 id tvAccountLogin
 id tvJobSeeker
 id tvLoadingData
+id tv_ContactNumber
 id tv_EditProfile
 id tv_Email
 id tv_FullName
@@ -3400,6 +3405,11 @@ id tv_Jobs
 id tv_Payment
 id tv_Phone
 id tv_createAccount
+id tv_jobDescription
+id tv_jobLocation
+id tv_jobPayment
+id tv_jobTitle
+id tv_jobType
 id txtSep
 id unchecked
 id uniform
@@ -3536,6 +3546,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_insert_job
+layout activity_job_details
 layout activity_job_poster_edit_profile
 layout activity_job_poster_login
 layout activity_job_poster_profile

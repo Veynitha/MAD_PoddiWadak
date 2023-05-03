@@ -6,5 +6,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#808080</color>
     <color name="button">#e8047c</color>
+    <color name="notification">#ACBBF6</color>
 
 </resources>

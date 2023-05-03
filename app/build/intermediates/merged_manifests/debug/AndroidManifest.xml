@@ -33,6 +33,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.JobPoster" >
         <activity
+            android:name="com.example.jobposter.activities.JobDetails"
+            android:exported="false" />
+        <activity
             android:name="com.example.jobposter.activities.Jobs_page"
             android:exported="false" />
         <activity
@@ -40,9 +43,6 @@
             android:exported="false" />
         <activity
             android:name="com.example.jobposter.activities.Insert_Job"
-            android:exported="false" />
-        <activity
-            android:name="com.example.jobposter.Job_page"
             android:exported="false" />
         <activity
             android:name="com.example.jobposter.activities.Job_Poster_register"

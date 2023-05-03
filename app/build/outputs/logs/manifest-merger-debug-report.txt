@@ -206,30 +206,30 @@ MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\
 		ADDED from F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:12:9-47
 	android:dataExtractionRules
 		ADDED from F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:7:9-65
-activity#com.example.jobposter.activities.Jobs_page
+activity#com.example.jobposter.activities.JobDetails
 ADDED from F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:14:9-16:40
 	android:exported
 		ADDED from F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:16:13-37
 	android:name
-		ADDED from F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:15:13-49
-activity#com.example.jobposter.activities.Job_Poster_editProfile
+		ADDED from F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:15:13-50
+activity#com.example.jobposter.activities.Jobs_page
 ADDED from F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:17:9-19:40
 	android:exported
 		ADDED from F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:18:13-62
-activity#com.example.jobposter.activities.Insert_Job
+		ADDED from F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:18:13-49
+activity#com.example.jobposter.activities.Job_Poster_editProfile
 ADDED from F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:20:9-22:40
 	android:exported
 		ADDED from F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:21:13-50
-activity#com.example.jobposter.Job_page
+		ADDED from F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:21:13-62
+activity#com.example.jobposter.activities.Insert_Job
 ADDED from F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:23:9-25:40
 	android:exported
 		ADDED from F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:24:13-37
+		ADDED from F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:24:13-50
 activity#com.example.jobposter.activities.Job_Poster_register
 ADDED from F:\Code\HTML\MAD_Test01\app\src\main\AndroidManifest.xml:26:9-28:40
 	android:exported

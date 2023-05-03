@@ -12,6 +12,9 @@
         android:theme="@style/Theme.JobPoster"
         tools:targetApi="31">
         <activity
+            android:name=".activities.JobDetails"
+            android:exported="false" />
+        <activity
             android:name=".activities.Jobs_page"
             android:exported="false" />
         <activity
@@ -20,7 +23,6 @@
         <activity
             android:name=".activities.Insert_Job"
             android:exported="false" />
-
         <activity
             android:name=".activities.Job_Poster_register"
             android:exported="false" />

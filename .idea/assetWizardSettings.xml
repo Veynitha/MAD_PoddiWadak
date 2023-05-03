@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/work/baseline_work_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/monetization_on/baseline_monetization_on_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,8 +28,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="103c84" />
-                            <entry key="outputName" value="baseline_work_24" />
+                            <entry key="outputName" value="baseline_monetization_on_24" />
                             <entry key="sourceFile" value="F:\Code\AndroidStudio\Waves\wave.svg" />
                           </map>
                         </option>

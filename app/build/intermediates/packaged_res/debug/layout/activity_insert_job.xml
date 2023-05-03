@@ -74,7 +74,7 @@
         android:id="@+id/et_JobDescription"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="44dp"
         android:ems="10"
         android:hint="Description"
         android:inputType="textPersonName"
@@ -95,10 +95,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_JobDescription"
-        app:layout_constraintVertical_bias="0.438" />
+        app:layout_constraintVertical_bias="0.168" />
 
     <LinearLayout
         android:layout_width="413dp"
@@ -168,5 +168,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_JobType" />
+
+    <EditText
+        android:id="@+id/et_JobPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_JobPayment" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

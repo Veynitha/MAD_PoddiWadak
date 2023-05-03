@@ -5,10 +5,13 @@ color Secondary
 color black
 color button
 color grey
+color notification
 color white
 drawable baseline_business_center_24
 drawable baseline_email_24
 drawable baseline_list_24
+drawable baseline_location_on_24
+drawable baseline_monetization_on_24
 drawable baseline_work_24
 drawable ic_arrowback
 drawable ic_baseline
@@ -51,6 +54,7 @@ id etPhone
 id et_FullName
 id et_JobDescription
 id et_JobPayment
+id et_JobPhone
 id et_JobTitle
 id et_JobType
 id et_Location
@@ -73,6 +77,7 @@ id topText
 id tvAccountLogin
 id tvJobSeeker
 id tvLoadingData
+id tv_ContactNumber
 id tv_EditProfile
 id tv_Email
 id tv_FullName
@@ -82,11 +87,17 @@ id tv_Jobs
 id tv_Payment
 id tv_Phone
 id tv_createAccount
+id tv_jobDescription
+id tv_jobLocation
+id tv_jobPayment
+id tv_jobTitle
+id tv_jobType
 id txtSep
 id updateAccount
 id view
 id view2
 layout activity_insert_job
+layout activity_job_details
 layout activity_job_poster_edit_profile
 layout activity_job_poster_login
 layout activity_job_poster_profile

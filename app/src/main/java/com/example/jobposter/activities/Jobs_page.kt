@@ -82,6 +82,24 @@ class Jobs_page : AppCompatActivity() {
                     val mAdapter = JobAdapter(joblist)
                     binding.rvJobs.adapter = mAdapter
 
+                    mAdapter.setonItemClickListener(object: JobAdapter.onItemClickListener{
+                        override fun onItemClick(position: Int) {
+                            //navigating to the job details page
+                            val intent = Intent(this@Jobs_page, JobDetails::class.java)
+
+                            //sending data abt the job selected to the details page
+                            intent.putExtra("jobId", joblist[position].jobId)
+                            intent.putExtra("jobTitle", joblist[position].jobTitle)
+                            intent.putExtra("jobType", joblist[position].jobType)
+                            intent.putExtra("jobPayment", joblist[position].payment)
+                            intent.putExtra("jobLocation", joblist[position].location)
+                            intent.putExtra("jobDescription", joblist[position].description)
+                            intent.putExtra("contactNo", joblist[position].contactNo)
+                            startActivity(intent)
+                        }
+
+                    })
+
                     //changing visibility of recycler view and placeholder tv
                     binding.rvJobs.visibility = View.VISIBLE
                     binding.tvLoadingData.visibility = View.GONE
