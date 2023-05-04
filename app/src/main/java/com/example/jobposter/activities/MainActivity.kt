@@ -1,12 +1,10 @@
-package com.example.jobposter
+package com.example.jobposter.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.example.jobposter.databinding.ActivityMainBinding
-import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.navigation.NavigationView
+import com.example.jobposter.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         jobsButton.setOnClickListener{
-            val intent = Intent(this, Job_page::class.java)
+            val intent = Intent(this, Jobs_page::class.java)
             startActivity(intent)
         }
         profileButton.setOnClickListener{

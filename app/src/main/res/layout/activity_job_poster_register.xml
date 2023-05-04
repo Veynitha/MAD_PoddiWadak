@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Job_Poster_register">
+    tools:context=".activities.Job_Poster_register">
 
     <TextView
         android:id="@+id/registertxt"
@@ -212,15 +212,14 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/Primary"
-        android:text="TextView"
+        android:text="Sign In?"
         android:textColor="@color/Secondary"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRegister"
-        app:layout_constraintVertical_bias="0.0"
-        tools:text="Sign in?" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -240,7 +239,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/ic_smallhome"
-            android:text="Button" />
+            android:text="@string/home" />
 
         <Button
             android:id="@+id/btn_Notification"
@@ -249,7 +248,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/nav_notification"
-            android:text="Button" />
+            android:text="@string/news" />
 
         <Button
             android:id="@+id/btn_Jobs"
@@ -258,7 +257,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/baseline_business_center_24"
-            android:text="Button" />
+            android:text="@string/jobs" />
 
         <Button
             android:id="@+id/btn_Profile"
@@ -267,7 +266,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/nav_profile"
-            android:text="Button" />
+            android:text="@string/profile" />
 
         <Button
             android:id="@+id/btn_More"
@@ -276,7 +275,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/baseline_list_24"
-            android:text="Button" />
+            android:text="@string/more" />
     </LinearLayout>
 
 
