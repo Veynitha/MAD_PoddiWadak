@@ -19,20 +19,18 @@
         android:id="@+id/et_JobTitle"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="104dp"
         android:ems="10"
         android:hint="Title"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <EditText
         android:id="@+id/et_JobType"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Job Type"
         android:inputType="textPersonName"
@@ -41,18 +39,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_JobTitle" />
 
+
     <EditText
         android:id="@+id/et_JobPayment"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="52dp"
         android:ems="10"
         android:hint="Salary"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_JobType" />
+        app:layout_constraintTop_toBottomOf="@+id/et_Location" />
 
     <TextView
         android:id="@+id/textView2"
@@ -64,24 +62,23 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintHorizontal_bias="0.556"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.094" />
-
+        app:layout_constraintVertical_bias="0.096" />
 
     <EditText
         android:id="@+id/et_JobDescription"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="Description"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_JobPayment" />
+        app:layout_constraintTop_toBottomOf="@+id/et_JobPhone" />
 
     <Button
         android:id="@+id/btn_InsertJob"
@@ -98,7 +95,7 @@
         app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_JobDescription"
-        app:layout_constraintVertical_bias="0.168" />
+        app:layout_constraintVertical_bias="0.159" />
 
     <LinearLayout
         android:layout_width="413dp"
@@ -118,7 +115,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/ic_smallhome"
-            android:text="Button" />
+            android:text="@string/home" />
 
         <Button
             android:id="@+id/btn_Notification"
@@ -127,7 +124,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/nav_notification"
-            android:text="Button" />
+            android:text="@string/news" />
 
         <Button
             android:id="@+id/btn_Jobs"
@@ -136,7 +133,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/baseline_business_center_24"
-            android:text="Button" />
+            android:text="@string/jobs" />
 
         <Button
             android:id="@+id/btn_Profile"
@@ -145,7 +142,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/nav_profile"
-            android:text="Button" />
+            android:text="@string/profile" />
 
         <Button
             android:id="@+id/btn_More"
@@ -154,18 +151,19 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/baseline_list_24"
-            android:text="Button" />
+            android:text="@string/more" />
     </LinearLayout>
 
     <EditText
         android:id="@+id/et_Location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="Location"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/et_JobPayment"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_JobType" />
 
@@ -173,10 +171,12 @@
         android:id="@+id/et_JobPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Contact Number"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_JobPayment" />
 

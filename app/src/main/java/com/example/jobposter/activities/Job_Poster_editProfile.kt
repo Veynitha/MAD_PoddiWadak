@@ -127,6 +127,8 @@ class Job_Poster_editProfile : AppCompatActivity() {
             .addOnSuccessListener {
                 //profile update
                 Toast.makeText(this, "User information updated...", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this@Job_Poster_editProfile, JobPoster_profile::class.java))
+                finish()
             }
             .addOnFailureListener { e ->
                 Toast.makeText(

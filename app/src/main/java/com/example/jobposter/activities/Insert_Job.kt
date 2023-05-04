@@ -93,6 +93,12 @@ class Insert_Job : AppCompatActivity() {
         dbRef = FirebaseDatabase.getInstance("https://podiwadak-a4d20-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Jobs")
         dbRef.child(jobId!!).setValue(job)
             .addOnSuccessListener {
+                binding.etJobTitle.setText("")
+                binding.etJobType.setText("")
+                binding.etLocation.setText("")
+                binding.etJobPayment.setText("")
+                binding.etJobPhone.setText("")
+                binding.etJobDescription.setText("")
                 Toast.makeText(this,"Data inserted Successfully", Toast.LENGTH_SHORT).show()
             }.addOnFailureListener {err->
                 Toast.makeText(this,"Error ${err.message}", Toast.LENGTH_SHORT).show()

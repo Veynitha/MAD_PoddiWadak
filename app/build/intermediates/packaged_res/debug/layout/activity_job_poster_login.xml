@@ -110,12 +110,11 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/Primary"
-        android:text="TextView"
+        android:text="Dont have an Account?"
         android:textColor="@color/Secondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Login"
-        tools:text="Create Account?" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_Login" />
 
     <TextView
         android:id="@+id/jobLister"
