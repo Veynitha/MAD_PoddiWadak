@@ -20,27 +20,35 @@ class MainActivity : AppCompatActivity() {
         val profileButton = findViewById<Button>(R.id.btn_Profile)
         val feedbackButton = findViewById<Button>(R.id.btn_More)
 
-        homeButton.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
+
+        homeButton.setOnClickListener {
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
-        notifyButton.setOnClickListener{
+
+//        notifyButton.setOnClickListener{
+//            val intent = Intent(this, Notification::class.java)
+//            startActivity(intent)
+//        }
+
+        jobsButton.setOnClickListener {
             val intent = Intent(this, Job_Poster_register::class.java)
             startActivity(intent)
         }
-        jobsButton.setOnClickListener{
-            val intent = Intent(this, Job_page::class.java)
-            startActivity(intent)
-        }
-        profileButton.setOnClickListener{
+
+        profileButton.setOnClickListener {
             val intent = Intent(this, JobPoster_profile::class.java)
             startActivity(intent)
         }
-        feedbackButton.setOnClickListener{
+
+        feedbackButton.setOnClickListener {
             val intent = Intent(this, Insert_Job::class.java)
             startActivity(intent)
         }
-
-
+//        putNotificationButton.setOnClickListener{
+//            val intent = Intent(this, NotificationAdd::class.java)
+//            startActivity(intent)
+//
+//        }
     }
 }

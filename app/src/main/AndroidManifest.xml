@@ -6,11 +6,29 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/podi_wadak"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.JobPoster"
         tools:targetApi="31">
+        <activity
+            android:name=".job_user_myjob"
+            android:exported="false" />
+        <activity
+            android:name=".job_user_edit_profile"
+            android:exported="false" />
+        <activity
+            android:name=".job_user_applyjob"
+            android:exported="false" />
+        <activity
+            android:name=".job_user_profile"
+            android:exported="false" />
+        <activity
+            android:name=".job_user_register"
+            android:exported="false" />
+        <activity
+            android:name=".job_user_login"
+            android:exported="false" />
         <activity
             android:name=".Insert_Job"
             android:exported="false" />
@@ -28,7 +46,11 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".Home"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

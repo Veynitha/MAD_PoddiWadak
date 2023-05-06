@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "747288091933",
+    "firebase_url": "https://podiwadak-a4d20-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "podiwadak-a4d20",
+    "storage_bucket": "podiwadak-a4d20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747288091933:android:15830078b13da3a20415f4",
+        "android_client_info": {
+          "package_name": "com.example.crudadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747288091933-o8itgbtv621ne09meuod9k395vgai1bq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA4_s845K4Va29eIEbc5dwIvO1LylPBdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747288091933-o8itgbtv621ne09meuod9k395vgai1bq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747288091933:android:15d30918d2e1aeb90415f4",
+        "android_client_info": {
+          "package_name": "com.example.jobposter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747288091933-o8itgbtv621ne09meuod9k395vgai1bq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA4_s845K4Va29eIEbc5dwIvO1LylPBdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747288091933-o8itgbtv621ne09meuod9k395vgai1bq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
