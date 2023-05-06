@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CRUD Client</string>
+    <string name="enter_the_phone_number">Enter The Phone Number</string>
+</resources>

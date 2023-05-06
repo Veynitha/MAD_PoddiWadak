@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CRUD Admin</string>
+    <string name="delete">Delete</string>
+    <string name="enter_the_phone_number">Enter The Phone Number</string>
+</resources>

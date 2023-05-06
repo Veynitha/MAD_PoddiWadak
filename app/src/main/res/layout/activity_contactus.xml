@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/Untitled"
+    tools:context=".Contactus">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="300dp"
+        app:layout_gravity="center_horizontal"
+        android:padding="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadName"
+            android:background="@drawable/blue_border"
+            android:layout_marginTop="20dp"
+            android:hint="Enter the Name"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/Purple"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadContact"
+            android:background="@drawable/blue_border"
+            android:layout_marginTop="20dp"
+            android:hint="Enter the Contact number"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/Purple"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadEmail"
+            android:background="@drawable/blue_border"
+            android:layout_marginTop="20dp"
+            android:hint="Enter the Email"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/Purple"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/searchButton"
+            android:text="Contact US"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
