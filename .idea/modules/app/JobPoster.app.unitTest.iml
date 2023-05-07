@@ -40,19 +40,19 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/bd24552fab9ddb1e77cc98d64c7444ed/transformed/glide-4.15.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/9987b10dbdc5baea0df20e84f9ead122/transformed/viewpager2-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/05e109fcdadcc2168598c677e6a286ac/transformed/firebase-database-20.2.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/ca07a1e410fdb162fde98e82ff5b3c24/transformed/firebase-crashlytics-18.3.6-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/8781afc460153f622d043a5bd6b45438/transformed/firebase-storage-20.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/785863387def72f742cf02316cdf4473/transformed/firebase-analytics-21.2.2-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/610b0727996627e0e295a04569ca6b0f/transformed/play-services-measurement-api-21.2.2-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/9dc100e78fac3e2f85fee0f3a69c66e0/transformed/firebase-auth-interop-20.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/e63be6fbf57300e5f20c0b9161f6e9eb/transformed/firebase-appcheck-interop-16.1.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/1121467f8d6c7c4ae08d2291cdab3baa/transformed/firebase-installations-17.1.3-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/d52c659029ab4e6dfe3e9ceb49fb34ea/transformed/firebase-common-20.3.2-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/3ae373f00911ba31c58f5a17923ea916/transformed/firebase-database-collection-18.0.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/808e3049fa29b9f233825de43ffd3f76/transformed/play-services-auth-api-phone-17.4.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/3f72712161b6283722c994315c6417d6/transformed/play-services-safetynet-17.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/20aefd893c34a66bff8dc3082ce44cfb/transformed/integrity-1.0.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/3ae373f00911ba31c58f5a17923ea916/transformed/firebase-database-collection-18.0.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/0a665798bcc211797780de4f6cb4bc31/transformed/play-services-base-18.1.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/ca07a1e410fdb162fde98e82ff5b3c24/transformed/firebase-crashlytics-18.3.6-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/9dc100e78fac3e2f85fee0f3a69c66e0/transformed/firebase-auth-interop-20.0.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/785863387def72f742cf02316cdf4473/transformed/firebase-analytics-21.2.2-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/610b0727996627e0e295a04569ca6b0f/transformed/play-services-measurement-api-21.2.2-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/1121467f8d6c7c4ae08d2291cdab3baa/transformed/firebase-installations-17.1.3-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/d52c659029ab4e6dfe3e9ceb49fb34ea/transformed/firebase-common-20.3.2-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/20aefd893c34a66bff8dc3082ce44cfb/transformed/integrity-1.0.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/3d003430f578b2cff8446eb04d8dfc29/transformed/firebase-installations-interop-17.1.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/9f6f620d91f48ff40baabb86c40ada59/transformed/play-services-tasks-18.0.2-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/3ae7b526af735ab511178f976eb3bcc5/transformed/play-services-measurement-21.2.2-api.jar</arg>

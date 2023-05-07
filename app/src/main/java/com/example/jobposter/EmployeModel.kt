@@ -1,6 +1,11 @@
 package com.example.jobposter
 
-class EmployeModel(empId: String, empName: String, empAge: String, empNote: String, empNumber: String) {
+data class applyjobDataClass(
+    var name: String? = null,
+    var age: String? = null,
+    var note: String? = null,
+    var contactnum: String? = null,
+    val contactnum1: String,
 
 
-}
+    )

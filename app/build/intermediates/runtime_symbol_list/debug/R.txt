@@ -3438,6 +3438,7 @@ int id up 0x7f08021e
 int id updateAccount 0x7f08021f
 int id updatebtn 0x7f080220
 int id useLogo 0x7f080221
+int id userdeleteaccount 0x7f08023b
 int id userlogout 0x7f080222
 int id username 0x7f080223
 int id vertical_only 0x7f080224

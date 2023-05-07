@@ -10,6 +10,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.example.jobposter.databinding.ActivityJobPosterProfileBinding
+import com.example.jobposter.databinding.ActivityJobUserLoginBinding
 import com.example.jobposter.databinding.ActivityJobUserProfileBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
@@ -35,21 +36,39 @@ class job_user_profile : AppCompatActivity() {
         loadUserInfo()
 
         //------edit account implementation
+//        binding.updatebtn.setOnClickListener{
+//            val intent = Intent(this, job_user_edit_profile::class.java)
+//            startActivity(intent)
+//        }
+        //------edit account implementation
         binding.updatebtn.setOnClickListener{
-            val intent = Intent(this, job_user_edit_profile::class.java)
-            startActivity(intent)
-
-
-
+            startActivity(Intent(this@job_user_profile, job_user_edit_profile::class.java))
+            finish()
         }
+
         //------edit account implementation
         binding.userlogout.setOnClickListener{
             val intent = Intent(this, job_user_login::class.java)
             startActivity(intent)
-
-
-
         }
+        //-----delete account implementation
+        binding.userdeleteaccount.setOnClickListener{
+            val user = firebaseAuth.currentUser
+            user?.delete()?.addOnCompleteListener {
+                if(it.isSuccessful){
+                    //account is deleted
+                    Toast.makeText(this,"Account was successfully deleted", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this@job_user_profile, job_user_login::class.java))
+                    finish()
+                }
+                else{
+                    //account failed to delete
+                    Toast.makeText(this,"Account failed to be deleted", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+
+
         //-----------nav bar implementation-------------------//
         binding.btnHome.setOnClickListener{
             val intent = Intent(this, Home::class.java)
@@ -90,7 +109,7 @@ class job_user_profile : AppCompatActivity() {
                     val phone = "${snapshot.child("phone").value}"
                     val email = "${snapshot.child("email").value}"
                     val password = "${snapshot.child("password").value}"
-                    val eId = "${snapshot.child("uid").value}"
+                    val uid = "${snapshot.child("uid").value}"
 
                     binding.eName.text = name
                     binding.EmNumber.text=phone

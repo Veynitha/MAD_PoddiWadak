@@ -116,6 +116,7 @@ id tv_createAccount
 id txtSep
 id updateAccount
 id updatebtn
+id userdeleteaccount
 id userlogout
 id username
 id view

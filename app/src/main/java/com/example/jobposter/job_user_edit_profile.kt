@@ -149,6 +149,8 @@ class job_user_edit_profile : AppCompatActivity() {
                     var name = "${snapshot.child("name").value}"
                     val profileImage = "${snapshot.child("profileImage").value}"
                     val phone = "${snapshot.child("phone").value}"
+                    val location= "${snapshot.child("locatioon").value}"
+                    val age = "${snapshot.child("age").value}"
 
                     //convert timestamp to proper date format
 

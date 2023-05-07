@@ -12,6 +12,9 @@
         android:theme="@style/Theme.JobPoster"
         tools:targetApi="31">
         <activity
+            android:name=".job_user_applyview"
+            android:exported="false" />
+        <activity
             android:name=".job_user_myjob"
             android:exported="false" />
         <activity
@@ -46,11 +49,10 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".Home"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -6,117 +6,105 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.example.jobposter.databinding.ActivityJobUserApplyjobBinding
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 
 class job_user_applyjob : AppCompatActivity() {
-    //view binding
-    private lateinit var binding: ActivityJobUserApplyjobBinding
+    private lateinit var EmpName: EditText
+    private lateinit var EmpAge: EditText
+    private lateinit var empNote :EditText
+    private lateinit var EmpNumber : EditText
+    private lateinit var EmpAdd : Button
 
-    //db reference
-    private lateinit var dbRef: DatabaseReference
-
-    //firebase auth
-    private lateinit var firebaseAuth: FirebaseAuth
-
-
+    private lateinit var dbRef : DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityJobUserApplyjobBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_job_user_applyjob)
 
-        firebaseAuth = FirebaseAuth.getInstance()
+        EmpName = findViewById(R.id.EmpName)
+        EmpAge = findViewById(R.id.EmpAge)
+        empNote = findViewById(R.id.empNote)
+        EmpNumber = findViewById(R.id.EmpNumber)
+        EmpAdd = findViewById(R.id.EmpAdd)
 
-        //creating reference
-                dbRef = FirebaseDatabase.getInstance("https://podiwadak-a4d20-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Employee")
+        //db connection
+        dbRef = FirebaseDatabase.getInstance("https://podiwadak-a4d20-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("applyemployee")
 
-        //--------insert userinfo button--------//
-        binding.EmpAdd.setOnClickListener {
-            val intent = Intent(this, job_user_myjob::class.java)
+        EmpAdd.setOnClickListener {
+            saveapplyemployee()
+        }
+//-----------------------------------toolbar button-----------------------------------------
+
+        val homeButton = findViewById<Button>(R.id.btn_Home)
+        val notifyButton = findViewById<Button>(R.id.btn_Notification)
+        val jobsButton = findViewById<Button>(R.id.btn_Jobs)
+        val profileButton = findViewById<Button>(R.id.btn_Profile)
+        val feedbackButton = findViewById<Button>(R.id.btn_More)
+
+
+        homeButton.setOnClickListener{
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
 
+//        notifyButton.setOnClickListener{
+//            val intent = Intent(this, Notification::class.java)
+//            startActivity(intent)
+//        }
 
-        //---------------bottom navbar implementation--------------//
-        binding.btnHome.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
-        binding.btnNotification.setOnClickListener{
+        jobsButton.setOnClickListener{
             val intent = Intent(this, Job_Poster_register::class.java)
             startActivity(intent)
         }
-        binding.btnJobs.setOnClickListener{
-            val intent = Intent(this, job_user_myjob::class.java)
-            startActivity(intent)
-        }
-        binding.btnProfile.setOnClickListener{
+
+        profileButton.setOnClickListener{
             val intent = Intent(this, JobPoster_profile::class.java)
             startActivity(intent)
         }
-        binding.btnMore.setOnClickListener{
+
+        feedbackButton.setOnClickListener{
             val intent = Intent(this, Insert_Job::class.java)
             startActivity(intent)
         }
+//        editNotificationButton.setOnClickListener{
+//            val intent = Intent(this, NotificationEdit::class.java)
+//            startActivity(intent)
+//        }
+    }
+    //-------------------------------end toolbar---------------------------------------------
+    //Add button function
+    private fun saveapplyemployee() {
+        //getting values
+        val name = EmpName.text.toString()
+        val age = EmpAge.text.toString()
+        val description = empNote.text.toString()
+        val phoneNumber = EmpNumber.text.toString()
+
+
+
+
+
+        val id = dbRef.push().key!!
+
+        val apply = applyjobDataClass(id,name,age,description,phoneNumber)
+
+        dbRef.child(id!!).setValue(apply).addOnSuccessListener {
+            Toast.makeText(this,"Successfully Added",Toast.LENGTH_SHORT).show()
+
+            //clear input fileds
+            EmpName.text.clear()
+            EmpAge.text.clear()
+            empNote.text.clear()
+            EmpNumber.text.clear()
+
+
+        }.addOnFailureListener {err->
+            Toast.makeText(this,"Faied ${err.message}",Toast.LENGTH_SHORT).show()
+        }
     }
 
-     private fun saveEmployeeData(){
-//         val EmpName=EmpName.text.toString()
-//         val EmpAge=EmpAge.text.toString()
-//         val EmpNote=EmpNote.text.toString()
-//         val EmpNumber=EmpNumber.text.toString()
-//         //val EmpAdd=EmpAdd.text.toString()
 
-         val name = binding.EmpName.text.toString()
-         val age = binding.EmpAge.text.toString()
-         val note = binding.empNote.text.toString()
-         val pnumber = binding.EmpNumber.text.toString()
 
-         //validations for fields
-         if(name.isEmpty()){
-             binding.EmpName.error = "Please enter name"
-         }
-         if (age.isEmpty()){
-             binding.EmpAge.error = "Please enter Age"
-         }
-         if (note.isEmpty()){
-             binding.empNote.error = "Please enter Note"
-         }
-         if (pnumber.isEmpty()){
-             binding.EmpNumber.error = "Please enter Number"
-         }
 
-         //setting key and object
-         val uId = dbRef.push().key!!
-
-         val Employee = employeeModel(uId, name, age, note, pnumber)
-         //sending data to database
-         dbRef = FirebaseDatabase.getInstance("https://podiwadak-a4d20-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Employee")
-         dbRef.child(uId!!).setValue(Employee)
-             .addOnSuccessListener {
-                 binding.EmpName.setText("")
-                 binding.EmpAge.setText("")
-                 binding.empNote.setText("")
-                 binding.EmpNumber.setText("")
-
-                 Toast.makeText(this,"Data inserted Successfully", Toast.LENGTH_SHORT).show()
-             }.addOnFailureListener {err->
-                 Toast.makeText(this,"Error ${err.message}", Toast.LENGTH_SHORT).show()
-             }
-
-     }
-
-    private fun employeeModel(
-         uId: String? = null,
-       // uId: String,
-        name: String? = null,
-        age: String? = null,
-        note: String? = null,
-        pnumber: String? = null
-    ): Any? {
-        TODO("Not yet implemented")
-    }
 }

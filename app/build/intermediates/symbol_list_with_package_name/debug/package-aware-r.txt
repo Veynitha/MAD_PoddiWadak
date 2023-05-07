@@ -3439,6 +3439,7 @@ id up
 id updateAccount
 id updatebtn
 id useLogo
+id userdeleteaccount
 id userlogout
 id username
 id vertical_only

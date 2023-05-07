@@ -139,6 +139,7 @@ class job_user_register : AppCompatActivity() {
         hashMap["profileImage"]=""
         hashMap["phone"]=phone
         hashMap["location"]=""
+        hashMap["age"]=""
         hashMap["userType"]="jobseeker"
         hashMap["timestamp"]=timestamp
         hashMap["password"]=password

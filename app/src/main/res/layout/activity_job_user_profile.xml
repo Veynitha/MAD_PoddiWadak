@@ -21,6 +21,7 @@
             android:layout_height="170dp"
             android:background="@color/Primary"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -91,14 +92,14 @@
             app:layout_constraintTop_toBottomOf="@+id/EmLocation" />
 
         <Button
-            android:id="@+id/userlogout"
+            android:id="@+id/userdeleteaccount"
             android:layout_width="336dp"
             android:layout_height="51dp"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="80dp"
+            android:layout_marginBottom="100dp"
             android:background="@drawable/round_button"
             android:backgroundTint="#2F3435"
-            android:text="LOGOUT"
+            android:text="DELETE"
             android:textColor="#F8F5F5"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -213,6 +214,20 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/EmEmail" />
+
+        <Button
+            android:id="@+id/userlogout"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#8BDBFF"
+            android:text="Logout"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.978"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
