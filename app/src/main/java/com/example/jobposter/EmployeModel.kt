@@ -6,6 +6,7 @@ data class applyjobDataClass(
     var note: String? = null,
     var contactnum: String? = null,
     val contactnum1: String,
+    val job: String,
 
 
     )

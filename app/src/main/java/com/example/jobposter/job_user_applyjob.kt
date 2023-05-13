@@ -15,6 +15,7 @@ class job_user_applyjob : AppCompatActivity() {
     private lateinit var EmpAge: EditText
     private lateinit var empNote :EditText
     private lateinit var EmpNumber : EditText
+    private lateinit var Empjobname : EditText
     private lateinit var EmpAdd : Button
 
     private lateinit var dbRef : DatabaseReference
@@ -26,6 +27,7 @@ class job_user_applyjob : AppCompatActivity() {
         EmpAge = findViewById(R.id.EmpAge)
         empNote = findViewById(R.id.empNote)
         EmpNumber = findViewById(R.id.EmpNumber)
+        Empjobname = findViewById(R.id.Empjobname)
         EmpAdd = findViewById(R.id.EmpAdd)
 
         //db connection
@@ -48,10 +50,10 @@ class job_user_applyjob : AppCompatActivity() {
             startActivity(intent)
         }
 
-//        notifyButton.setOnClickListener{
-//            val intent = Intent(this, Notification::class.java)
-//            startActivity(intent)
-//        }
+        notifyButton.setOnClickListener{
+            val intent = Intent(this, user_job_apply_view::class.java)
+            startActivity(intent)
+        }
 
         jobsButton.setOnClickListener{
             val intent = Intent(this, Job_Poster_register::class.java)
@@ -78,8 +80,9 @@ class job_user_applyjob : AppCompatActivity() {
         //getting values
         val name = EmpName.text.toString()
         val age = EmpAge.text.toString()
-        val description = empNote.text.toString()
-        val phoneNumber = EmpNumber.text.toString()
+        val note = empNote.text.toString()
+        val contactnum= EmpNumber.text.toString()
+        val job =Empjobname.text.toString()
 
 
 
@@ -87,7 +90,7 @@ class job_user_applyjob : AppCompatActivity() {
 
         val id = dbRef.push().key!!
 
-        val apply = applyjobDataClass(id,name,age,description,phoneNumber)
+        val apply = applyjobDataClass(id,name,age,note,contactnum,job)
 
         dbRef.child(id!!).setValue(apply).addOnSuccessListener {
             Toast.makeText(this,"Successfully Added",Toast.LENGTH_SHORT).show()
@@ -97,6 +100,7 @@ class job_user_applyjob : AppCompatActivity() {
             EmpAge.text.clear()
             empNote.text.clear()
             EmpNumber.text.clear()
+            Empjobname.text.clear()
 
 
         }.addOnFailureListener {err->

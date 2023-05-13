@@ -22,7 +22,7 @@
         android:padding="20dp">
 
         <TextView
-            android:id="@+id/tvName"
+            android:id="@+id/tvjobName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -33,7 +33,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tvJobTitel"
+            android:id="@+id/tvusername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
@@ -44,7 +44,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tvNotification"
+            android:id="@+id/tvdescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
@@ -60,24 +60,24 @@
             android:padding="2dp">
 
             <TextView
-                android:id="@+id/Email"
+                android:id="@+id/Age"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:gravity="left"
                 android:paddingRight="5dp"
-                android:text="email :"
+                android:text="age :"
                 android:textColor="@color/black"
                 android:textSize="20px" />
 
             <TextView
-                android:id="@+id/tvEmail"
+                android:id="@+id/tvage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:gravity="left"
                 android:paddingRight="20dp"
-                android:text="@string/email"
+                android:text="age"
                 android:textColor="@color/black"
                 android:textSize="20px" />
 
