@@ -11,6 +11,8 @@ color white
 drawable baseline_business_center_24
 drawable baseline_email_24
 drawable baseline_list_24
+drawable baseline_location_on_24
+drawable baseline_monetization_on_24
 drawable baseline_work_24
 drawable home
 drawable ic_arrowback

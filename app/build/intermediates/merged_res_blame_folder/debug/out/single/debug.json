@@ -28,6 +28,10 @@
         "source": "com.example.jobposter.app-main-38:/layout/activity_home.xml"
     },
     {
+        "merged": "com.example.jobposter.app-merged_res-36:/drawable_baseline_location_on_24.xml.flat",
+        "source": "com.example.jobposter.app-main-38:/drawable/baseline_location_on_24.xml"
+    },
+    {
         "merged": "com.example.jobposter.app-merged_res-36:/layout_activity_job_poster_login.xml.flat",
         "source": "com.example.jobposter.app-main-38:/layout/activity_job_poster_login.xml"
     },
@@ -122,6 +126,10 @@
     {
         "merged": "com.example.jobposter.app-merged_res-36:/drawable_baseline_work_24.xml.flat",
         "source": "com.example.jobposter.app-main-38:/drawable/baseline_work_24.xml"
+    },
+    {
+        "merged": "com.example.jobposter.app-merged_res-36:/drawable_baseline_monetization_on_24.xml.flat",
+        "source": "com.example.jobposter.app-main-38:/drawable/baseline_monetization_on_24.xml"
     },
     {
         "merged": "com.example.jobposter.app-merged_res-36:/drawable_ic_person.xml.flat",

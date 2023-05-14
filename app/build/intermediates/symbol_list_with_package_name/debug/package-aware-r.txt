@@ -2731,6 +2731,8 @@ drawable avd_show_password
 drawable baseline_business_center_24
 drawable baseline_email_24
 drawable baseline_list_24
+drawable baseline_location_on_24
+drawable baseline_monetization_on_24
 drawable baseline_work_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
