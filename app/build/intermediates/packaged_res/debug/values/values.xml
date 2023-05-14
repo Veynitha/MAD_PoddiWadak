@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
     <color name="Primary">#103c84</color>
-    <color name="Secondary">#e8047c</color>
+    <color name="Secondary">#0B2447</color>
     <color name="black">#FF000000</color>
     <color name="button">#e8047c</color>
+    <color name="delete">#FF0026</color>
     <color name="grey">#808080</color>
     <color name="notification">#ACBBF6</color>
     <color name="white">#FFFFFFFF</color>
@@ -12,6 +13,7 @@
     <string name="com.google.firebase.crashlytics.mapping_file_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">00000000000000000000000000000000</string>
     <string name="default_web_client_id" translatable="false">747288091933-o8itgbtv621ne09meuod9k395vgai1bq.apps.googleusercontent.com</string>
     <string name="email">email@gmail.com</string>
+    <string name="firebase_database_url" translatable="false">https://podiwadak-a4d20-default-rtdb.asia-southeast1.firebasedatabase.app</string>
     <string name="full_name">Full Name</string>
     <string name="gcm_defaultSenderId" translatable="false">747288091933</string>
     <string name="google_api_key" translatable="false">AIzaSyBA4_s845K4Va29eIEbc5dwIvO1LylPBdM</string>
@@ -19,11 +21,17 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBA4_s845K4Va29eIEbc5dwIvO1LylPBdM</string>
     <string name="google_storage_bucket" translatable="false">podiwadak-a4d20.appspot.com</string>
     <string name="have_account">Already have an Account?</string>
+    <string name="home">Home</string>
     <string name="joblister">JobLister</string>
+    <string name="jobs">Jobs</string>
     <string name="jobseeker">JobSeeker</string>
     <string name="login">Login</string>
+    <string name="more">More</string>
+    <string name="news">News</string>
+    <string name="notifi">Notifi</string>
     <string name="password">cornypassword</string>
     <string name="phone_number">0772233445</string>
+    <string name="profile">Profile</string>
     <string name="project_id" translatable="false">podiwadak-a4d20</string>
     <string name="register">Register</string>
     <style name="RoundCorner" parent="">

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationAdd">
+
+   <View
+       android:id="@+id/view"
+       android:layout_width="0dp"
+       android:layout_height="60dp"
+       android:background="@color/Primary"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <View
+       android:id="@+id/view2"
+       android:layout_width="0dp"
+       android:layout_height="100dp"
+       android:background="@drawable/wave"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.5"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/view" />
+
+   <TextView
+       android:id="@+id/textView3"
+       android:layout_width="262dp"
+       android:layout_height="44dp"
+       android:layout_marginTop="32dp"
+       android:text="Notification Area"
+       android:textColor="@color/white"
+       android:textSize="24sp"
+       android:textStyle="bold"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.255"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <Button
+       android:id="@+id/but_edit"
+       android:layout_width="160dp"
+       android:layout_height="51dp"
+       android:layout_marginTop="76dp"
+       android:background="@color/Primary"
+       android:text="Edit Notification"
+       android:textColor="@color/white"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.932"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <TextView
+       android:id="@+id/textView4"
+       android:layout_width="307dp"
+       android:layout_height="48dp"
+       android:layout_marginTop="180dp"
+       android:text="Insert your Notification here..."
+       android:textColor="#0C0909"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="@+id/view" />
+
+   <EditText
+       android:id="@+id/inputName"
+       android:layout_width="347dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="80dp"
+       android:background="@drawable/round_border"
+       android:drawableLeft="@drawable/ic_smallperson"
+       android:drawablePadding="16dp"
+       android:ems="10"
+       android:hint="Company / Employer Name"
+       android:inputType="text"
+       android:padding="16dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+   <EditText
+       android:id="@+id/inputEmail"
+       android:layout_width="347dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:background="@drawable/round_border"
+       android:drawableLeft="@drawable/ic_email"
+       android:drawablePadding="16dp"
+       android:ems="10"
+       android:hint="Email"
+       android:inputType="textEmailAddress"
+       android:padding="16dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.5"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/inputName" />
+
+   <EditText
+       android:id="@+id/inputPhoneNumber"
+       android:layout_width="347dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:background="@drawable/round_border"
+       android:drawableLeft="@drawable/ic_smallphone"
+       android:drawablePadding="16dp"
+       android:ems="10"
+       android:hint="PhoneNumber"
+       android:inputType="text"
+       android:padding="16dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.5"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
+
+
+   <EditText
+       android:id="@+id/inputJobTitel"
+       android:layout_width="347dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="12dp"
+       android:background="@drawable/round_border"
+       android:drawablePadding="16dp"
+       android:ems="10"
+       android:hint="Titel"
+       android:inputType="text"
+       android:padding="16dp"
+       app:layout_constraintBottom_toTopOf="@+id/inputNotification"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.5"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/inputPhoneNumber" />
+
+   <EditText
+       android:id="@+id/inputNotification"
+       android:layout_width="349dp"
+       android:layout_height="83dp"
+       android:layout_marginTop="10dp"
+       android:background="@drawable/round_border"
+       android:drawablePadding="16dp"
+       android:ems="10"
+       android:hint="Type your Notification here"
+       android:inputType="text"
+       android:padding="16dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.516"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/inputJobTitel" />
+
+   <Button
+       android:id="@+id/btnAdd"
+       android:layout_width="347dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="32dp"
+       android:layout_marginBottom="16dp"
+       android:background="@drawable/round_border"
+       android:backgroundTint="@color/Secondary"
+       android:text="Add your Notification"
+       android:textColor="@color/white"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/inputNotification" />
+
+   <LinearLayout
+       android:id="@+id/linearLayout2"
+       android:layout_width="413dp"
+       android:layout_height="55dp"
+
+       android:orientation="horizontal"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.998">
+
+      <Button
+          android:id="@+id/btn_Home"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@color/Primary"
+          android:drawableTop="@drawable/ic_smallhome"
+          android:text="Home"
+          android:textColor="@color/white" />
+
+      <Button
+          android:id="@+id/btn_Notification"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@color/Primary"
+          android:drawableTop="@drawable/nav_notification"
+          android:text="Notifi"
+          android:textColor="@color/white" />
+
+      <Button
+          android:id="@+id/btn_Jobs"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@color/Primary"
+          android:drawableTop="@drawable/baseline_business_center_24"
+          android:text="Job"
+          android:textColor="@color/white" />
+
+      <Button
+          android:id="@+id/btn_Profile"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@color/Primary"
+          android:drawableTop="@drawable/nav_profile"
+          android:text="Profile"
+          android:textColor="@color/white" />
+
+      <Button
+          android:id="@+id/btn_More"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@color/Primary"
+          android:drawableTop="@drawable/baseline_list_24"
+          android:text="More"
+          android:textColor="@color/white" />
+   </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

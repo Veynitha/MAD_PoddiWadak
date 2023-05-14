@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.jobposter.Home
+import com.example.jobposter.Notification
 import com.example.jobposter.adapters.JobAdapter
 import com.example.jobposter.databinding.ActivityJobsPageBinding
 import com.example.jobposter.models.JobModel
@@ -42,11 +44,11 @@ class Jobs_page : AppCompatActivity() {
 
         //-----------nav bar implementation-------------------//
         binding.btnHome.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
         binding.btnNotification.setOnClickListener{
-            val intent = Intent(this, Job_Poster_register::class.java)
+            val intent = Intent(this, Notification::class.java)
             startActivity(intent)
         }
         binding.btnJobs.setOnClickListener{
@@ -54,7 +56,7 @@ class Jobs_page : AppCompatActivity() {
             startActivity(intent)
         }
         binding.btnProfile.setOnClickListener{
-            val intent = Intent(this, JobPoster_profile::class.java)
+            val intent = Intent(this, JobPoster_login::class.java)
             startActivity(intent)
         }
         binding.btnMore.setOnClickListener{

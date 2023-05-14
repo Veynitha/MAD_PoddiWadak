@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
+import com.example.jobposter.Home
+import com.example.jobposter.Notification
 import com.example.jobposter.databinding.ActivityJobPosterLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
@@ -46,11 +48,11 @@ class JobPoster_login : AppCompatActivity() {
 
         //-----------nav bar implementation-------------------//
         binding.btnHome.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
         binding.btnNotification.setOnClickListener{
-            val intent = Intent(this, Job_Poster_register::class.java)
+            val intent = Intent(this, Notification::class.java)
             startActivity(intent)
         }
         binding.btnJobs.setOnClickListener{
@@ -58,7 +60,7 @@ class JobPoster_login : AppCompatActivity() {
             startActivity(intent)
         }
         binding.btnProfile.setOnClickListener{
-            val intent = Intent(this, JobPoster_profile::class.java)
+            val intent = Intent(this, JobPoster_login::class.java)
             startActivity(intent)
         }
         binding.btnMore.setOnClickListener{

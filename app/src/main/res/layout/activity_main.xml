@@ -10,6 +10,7 @@
         android:layout_width="413dp"
         android:layout_height="55dp"
         android:orientation="horizontal"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,8 +23,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/Primary"
+            android:textColor="@color/white"
             android:drawableTop="@drawable/ic_smallhome"
-            android:text="@string/home" />
+            android:text="@string/home"/>
+
 
         <Button
             android:id="@+id/btn_Notification"
@@ -31,8 +34,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/Primary"
+            android:textColor="@color/white"
             android:drawableTop="@drawable/nav_notification"
             android:text="@string/news" />
+
 
         <Button
             android:id="@+id/btn_Jobs"
@@ -40,8 +45,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/Primary"
+            android:textColor="@color/white"
             android:drawableTop="@drawable/baseline_business_center_24"
             android:text="@string/jobs" />
+
 
         <Button
             android:id="@+id/btn_Profile"
@@ -49,8 +56,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/Primary"
+            android:textColor="@color/white"
             android:drawableTop="@drawable/nav_profile"
             android:text="@string/profile" />
+
 
         <Button
             android:id="@+id/btn_More"
@@ -58,7 +67,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/Primary"
+            android:textColor="@color/white"
             android:drawableTop="@drawable/baseline_list_24"
             android:text="@string/more" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
