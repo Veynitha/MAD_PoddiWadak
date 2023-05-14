@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "808410993357",
+    "project_id": "crud-job",
+    "storage_bucket": "crud-job.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808410993357:android:49aa802924e5ba482d4f84",
+        "android_client_info": {
+          "package_name": "com.example.crudjob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808410993357-pdf618i5bsekik5q52qou1fvull9qqcr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOaM3ibb1u4HniPhy1PlWGw5ZBp3BDz-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808410993357-pdf618i5bsekik5q52qou1fvull9qqcr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808410993357:android:b8623e07197aa9032d4f84",
+        "android_client_info": {
+          "package_name": "com.example.crudjobadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808410993357-pdf618i5bsekik5q52qou1fvull9qqcr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOaM3ibb1u4HniPhy1PlWGw5ZBp3BDz-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808410993357-pdf618i5bsekik5q52qou1fvull9qqcr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
