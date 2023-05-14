@@ -8,6 +8,9 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.jobposter.activities.Insert_Job
+import com.example.jobposter.activities.JobPoster_login
+import com.example.jobposter.activities.Jobs_page
 import com.google.firebase.database.*
 
 class NotificationEdit: AppCompatActivity() {
@@ -42,17 +45,17 @@ class NotificationEdit: AppCompatActivity() {
         }
 
         notifyButton.setOnClickListener{
-            val intent = Intent(this, NotificationEdit::class.java)
+            val intent = Intent(this, Notification::class.java)
             startActivity(intent)
         }
 
         jobsButton.setOnClickListener{
-            val intent = Intent(this, Job_Poster_register::class.java)
+            val intent = Intent(this, Jobs_page::class.java)
             startActivity(intent)
         }
 
         profileButton.setOnClickListener{
-            val intent = Intent(this, JobPoster_profile::class.java)
+            val intent = Intent(this, JobPoster_login::class.java)
             startActivity(intent)
         }
 

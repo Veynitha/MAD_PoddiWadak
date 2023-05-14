@@ -5,8 +5,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#808080</color>
-    <color name="button">#576CBC</color>
-    <color name="notification">#ACBBF6</color>
+
+
+
     <color name="delete">#FF0026</color>
+
+    <color name="button">#e8047c</color>
+    <color name="notification">#ACBBF6</color>
+
 
 </resources>

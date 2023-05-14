@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.jobposter.activities.Insert_Job
 import com.google.firebase.database.*
 
 class Notification: AppCompatActivity() {

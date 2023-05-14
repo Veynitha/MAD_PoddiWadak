@@ -6,6 +6,9 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.jobposter.activities.Insert_Job
+import com.example.jobposter.activities.JobPoster_login
+import com.example.jobposter.activities.Jobs_page
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -57,12 +60,12 @@ class NotificationAdd: AppCompatActivity() {
         }
 
         jobsButton.setOnClickListener{
-            val intent = Intent(this, Job_Poster_register::class.java)
+            val intent = Intent(this, Jobs_page::class.java)
             startActivity(intent)
         }
 
         profileButton.setOnClickListener{
-            val intent = Intent(this, JobPoster_profile::class.java)
+            val intent = Intent(this, JobPoster_login::class.java)
             startActivity(intent)
         }
 

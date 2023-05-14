@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:paddingTop="0dp"
     android:paddingBottom="0dp"
-    tools:context=".JobPoster_profile">
+    tools:context=".activities.JobPoster_profile">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,135 +24,121 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="15dp"
-                android:src="@drawable/ic_arrowback"></ImageView>
+                android:src="@drawable/ic_arrowback" />
 
 
         </LinearLayout>
 
-        <RelativeLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeLayout"
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:background="@color/Primary"
             android:padding="20dp">
 
             <ImageView
-                android:id="@+id/image_profile"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_centerVertical="true"
-                android:src="@drawable/ic_person">
+                android:id="@+id/iv_Profilepic"
+                android:layout_width="149dp"
+                android:layout_height="142dp"
+                android:src="@drawable/ic_person"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
             </ImageView>
 
-            <TextView
-                android:id="@+id/username"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="10dp"
-                android:layout_toEndOf="@+id/image_profile"
-                android:includeFontPadding="false"
-                android:text="UserName"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:textStyle="bold"></TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/username"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="10dp"
-                android:layout_toEndOf="@+id/image_profile"
-                android:text="username@gmail.com"
-                android:textColor="@color/white"
-                android:textSize="14sp"
-                android:textStyle="bold"></TextView>
-
-        </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="499dp"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:layout_marginTop="30px"
+            android:baselineAligned="false"
+            android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/editTextTextPersonName"
+
+            <TextView
+                android:id="@+id/tv_FullName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
                 android:drawableStart="@drawable/ic_smallperson"
-                android:drawablePadding="10dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:paddingBottom="24dp"
-                android:text="@string/full_name" />
+                android:text="Full Name"
+                android:textSize="24sp" />
 
-            <EditText
-                android:id="@+id/editTextTextEmailAddress"
+            <TextView
+                android:id="@+id/tv_Email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
                 android:drawableStart="@drawable/ic_email"
-                android:drawablePadding="10dp"
-                android:ems="10"
-                android:inputType="textEmailAddress"
-                android:paddingBottom="24dp"
-                tools:text="@string/email" />
+                android:text="Email"
+                android:textSize="24sp" />
 
-            <EditText
-                android:id="@+id/editTextPhone"
+            <TextView
+                android:id="@+id/tv_Phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
                 android:drawableStart="@drawable/ic_smallphone"
-                android:drawableRight="@drawable/ic_smallphone"
-                android:drawablePadding="10dp"
-                android:ems="10"
-                android:inputType="phone"
-                android:paddingBottom="24dp"
-                android:text="@string/phone_number" />
+                android:text="Phone Number"
+                android:textSize="24sp" />
 
-            <EditText
-                android:id="@+id/editTextTextPassword"
+            <TextView
+                android:id="@+id/tv_Jobs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/ic_smallkey"
-                android:drawableRight="@drawable/ic_smallphone"
-                android:drawablePadding="10dp"
-                android:ems="10"
-                android:inputType="textPassword"
-                android:paddingBottom="24dp"
-                android:text="@string/full_name" />
+                android:layout_marginTop="30px"
+                android:drawableStart="@drawable/baseline_work_24"
+                android:text="0"
+                android:textSize="24sp" />
 
             <Button
-                android:id="@+id/addJob"
+                android:id="@+id/btn_AddJob"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/round_button"
                 android:backgroundTint="@color/Primary"
                 android:text="Add a Job"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
 
             <Button
                 android:id="@+id/updateAccount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
                 android:background="@drawable/round_border"
                 android:backgroundTint="@color/button"
                 android:text="Update Account"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-            <TextView
+            <Button
+                android:id="@+id/btn_DeleteUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
                 android:paddingTop="12dp"
+                android:layout_marginTop="30px"
+                android:layout_marginBottom="30px"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/Primary"
                 android:text="Delete Account"
+                android:textColor="@color/white"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <LinearLayout
+
                 android:layout_width="413dp"
                 android:layout_height="55dp"
                 android:orientation="horizontal"
@@ -170,8 +156,9 @@
                     android:layout_weight="1"
                     android:background="@color/Primary"
                     android:drawableTop="@drawable/ic_smallhome"
-                    android:text="Home"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:text="@string/home" />
+
 
                 <Button
                     android:id="@+id/btn_Notification"
@@ -180,8 +167,9 @@
                     android:layout_weight="1"
                     android:background="@color/Primary"
                     android:drawableTop="@drawable/nav_notification"
-                    android:text="Notifi"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:text="@string/news" />
+
 
                 <Button
                     android:id="@+id/btn_Jobs"
@@ -190,8 +178,9 @@
                     android:layout_weight="1"
                     android:background="@color/Primary"
                     android:drawableTop="@drawable/baseline_business_center_24"
-                    android:text="Job"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:text="@string/jobs" />
+
 
                 <Button
                     android:id="@+id/btn_Profile"
@@ -200,8 +189,9 @@
                     android:layout_weight="1"
                     android:background="@color/Primary"
                     android:drawableTop="@drawable/nav_profile"
-                    android:text="Profile"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:text="@string/profile" />
+
 
                 <Button
                     android:id="@+id/btn_More"
@@ -210,8 +200,9 @@
                     android:layout_weight="1"
                     android:background="@color/Primary"
                     android:drawableTop="@drawable/baseline_list_24"
-                    android:text="More"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:text="@string/more" />
+
             </LinearLayout>
         </LinearLayout>
 

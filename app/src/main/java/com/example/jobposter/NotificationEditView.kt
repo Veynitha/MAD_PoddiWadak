@@ -8,6 +8,9 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.jobposter.activities.Insert_Job
+import com.example.jobposter.activities.JobPoster_login
+import com.example.jobposter.activities.Jobs_page
 import com.google.firebase.database.FirebaseDatabase
 
 
@@ -52,30 +55,30 @@ class NotificationEditView : AppCompatActivity (){
             val feedbackButton = findViewById<Button>(R.id.btn_More)
 
 
-            homeButton.setOnClickListener{
-                val intent = Intent(this, Home::class.java)
-                startActivity(intent)
-            }
+        homeButton.setOnClickListener{
+            val intent = Intent(this, Home::class.java)
+            startActivity(intent)
+        }
 
-            notifyButton.setOnClickListener{
-                val intent = Intent(this, Notification::class.java)
-                startActivity(intent)
-            }
+        notifyButton.setOnClickListener{
+            val intent = Intent(this, Notification::class.java)
+            startActivity(intent)
+        }
 
-            jobsButton.setOnClickListener{
-                val intent = Intent(this, Job_Poster_register::class.java)
-                startActivity(intent)
-            }
+        jobsButton.setOnClickListener{
+            val intent = Intent(this, Jobs_page::class.java)
+            startActivity(intent)
+        }
 
-            profileButton.setOnClickListener{
-                val intent = Intent(this, JobPoster_profile::class.java)
-                startActivity(intent)
-            }
+        profileButton.setOnClickListener{
+            val intent = Intent(this, JobPoster_login::class.java)
+            startActivity(intent)
+        }
 
-            feedbackButton.setOnClickListener{
-                val intent = Intent(this, Insert_Job::class.java)
-                startActivity(intent)
-            }
+        feedbackButton.setOnClickListener{
+            val intent = Intent(this, Insert_Job::class.java)
+            startActivity(intent)
+        }
         }
 //-------------------------------end toolbar---------------------------------------------
 

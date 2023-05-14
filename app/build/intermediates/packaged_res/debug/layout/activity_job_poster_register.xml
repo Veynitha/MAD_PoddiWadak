@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Job_Poster_register">
+    tools:context=".activities.Job_Poster_register">
 
     <TextView
         android:id="@+id/registertxt"
@@ -92,14 +92,14 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toStartOf="@+id/jobSeeker"
+        app:layout_constraintEnd_toStartOf="@+id/tvJobSeeker"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/jobLister"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.425" />
 
     <TextView
-        android:id="@+id/jobSeeker"
+        android:id="@+id/tvJobSeeker"
         android:layout_width="116dp"
         android:layout_height="wrap_content"
         android:text="JobSeeker"
@@ -114,11 +114,11 @@
         app:layout_constraintVertical_bias="0.425" />
 
     <EditText
-        android:id="@+id/inputName"
+        android:id="@+id/et_FullName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/round_border"
         android:drawableLeft="@drawable/ic_smallperson"
@@ -128,11 +128,12 @@
         android:inputType="text"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registertxt" />
 
     <EditText
-        android:id="@+id/inputEmail"
+        android:id="@+id/etEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -148,11 +149,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputName" />
+        app:layout_constraintTop_toBottomOf="@+id/et_FullName" />
 
 
     <EditText
-        android:id="@+id/inputPhoneNumber"
+        android:id="@+id/etPhone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -167,10 +168,10 @@
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
     <EditText
-        android:id="@+id/inputPassword"
+        android:id="@+id/et_Password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -185,10 +186,10 @@
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputPhoneNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
 
     <Button
-        android:id="@+id/registerbtn"
+        android:id="@+id/btnRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -201,23 +202,24 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/et_Password" />
 
     <TextView
-        android:id="@+id/accountLogin"
+        android:id="@+id/tvAccountLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/Primary"
-        android:text="TextView"
+        android:text="Sign In?"
         android:textColor="@color/Secondary"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerbtn"
-        tools:text="Sign in?" />
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister"
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -238,8 +240,9 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/ic_smallhome"
-            android:text="Home"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:text="@string/home" />
+
 
         <Button
             android:id="@+id/btn_Notification"
@@ -248,8 +251,9 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/nav_notification"
-            android:text="Notifi"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:text="@string/news" />
+
 
         <Button
             android:id="@+id/btn_Jobs"
@@ -258,8 +262,9 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/baseline_business_center_24"
-            android:text="Job"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:text="@string/jobs" />
+
 
         <Button
             android:id="@+id/btn_Profile"
@@ -268,8 +273,9 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/nav_profile"
-            android:text="Profile"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:text="@string/profile" />
+
 
         <Button
             android:id="@+id/btn_More"
@@ -278,8 +284,9 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/baseline_list_24"
-            android:text="More"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:text="@string/more" />
+
     </LinearLayout>
 
 

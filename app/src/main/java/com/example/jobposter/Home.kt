@@ -4,6 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.jobposter.activities.Insert_Job
+import com.example.jobposter.activities.JobPoster_login
+import com.example.jobposter.activities.Jobs_page
 
 class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,12 +31,12 @@ class Home : AppCompatActivity() {
         }
 
         jobsButton.setOnClickListener{
-            val intent = Intent(this, Job_Poster_register::class.java)
+            val intent = Intent(this, Jobs_page::class.java)
             startActivity(intent)
         }
 
         profileButton.setOnClickListener{
-            val intent = Intent(this, JobPoster_profile::class.java)
+            val intent = Intent(this, JobPoster_login::class.java)
             startActivity(intent)
         }
 
