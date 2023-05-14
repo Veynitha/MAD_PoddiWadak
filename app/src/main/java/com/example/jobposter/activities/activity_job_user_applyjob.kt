@@ -64,7 +64,7 @@ class activity_job_user_applyjob : AppCompatActivity() {
         }
 
         profileButton.setOnClickListener{
-            val intent = Intent(this, job_user_profile::class.java)
+            val intent = Intent(this, job_user_login::class.java)
             startActivity(intent)
         }
 

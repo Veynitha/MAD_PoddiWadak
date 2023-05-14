@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.util.Patterns
 import android.widget.Button
 import android.widget.Toast
+import com.example.jobposter.Home
 import com.example.jobposter.R
 import com.example.jobposter.databinding.ActivityJobUserRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -59,27 +60,24 @@ class job_user_register : AppCompatActivity() {
         val feedbackButton = findViewById<Button>(R.id.btn_More)
 
 
-        homeButton.setOnClickListener{
+        //---------------bottom navbar implementation--------------//
+        binding.btnHome.setOnClickListener{
             val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
-
-        notifyButton.setOnClickListener{
-            val intent = Intent(this, Notification::class.java)
+        binding.btnNotification.setOnClickListener{
+            val intent = Intent(this, com.example.jobposter.Notification::class.java)
             startActivity(intent)
         }
-
-        jobsButton.setOnClickListener{
+        binding.btnJobs.setOnClickListener{
             val intent = Intent(this, Jobs_page::class.java)
             startActivity(intent)
         }
-
-        profileButton.setOnClickListener{
-            val intent = Intent(this, job_user_profile::class.java)
+        binding.btnProfile.setOnClickListener{
+            val intent = Intent(this, job_user_login::class.java)
             startActivity(intent)
         }
-
-        feedbackButton.setOnClickListener{
+        binding.btnMore.setOnClickListener{
             val intent = Intent(this, activity_job_user_applyjob::class.java)
             startActivity(intent)
         }

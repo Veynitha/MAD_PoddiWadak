@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "JobPoster"
-include ':app'
+include 'app'

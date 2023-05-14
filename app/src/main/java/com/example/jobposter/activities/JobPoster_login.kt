@@ -47,6 +47,7 @@ class JobPoster_login : AppCompatActivity() {
         }
 
         //-----------nav bar implementation-------------------//
+        //---------------bottom navbar implementation--------------//
         binding.btnHome.setOnClickListener{
             val intent = Intent(this, Home::class.java)
             startActivity(intent)
@@ -60,11 +61,11 @@ class JobPoster_login : AppCompatActivity() {
             startActivity(intent)
         }
         binding.btnProfile.setOnClickListener{
-            val intent = Intent(this, JobPoster_login::class.java)
+            val intent = Intent(this, job_user_login::class.java)
             startActivity(intent)
         }
         binding.btnMore.setOnClickListener{
-            val intent = Intent(this, Insert_Job::class.java)
+            val intent = Intent(this, activity_job_user_applyjob::class.java)
             startActivity(intent)
         }
     }

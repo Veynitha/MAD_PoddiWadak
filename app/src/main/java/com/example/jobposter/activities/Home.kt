@@ -1,5 +1,6 @@
 package com.example.jobposter.activities
 
+import android.app.Notification
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -23,13 +24,13 @@ class Home : AppCompatActivity() {
             startActivity(intent)
         }
 
-//        notifyButton.setOnClickListener{
-//            val intent = Intent(this, Notification::class.java)
-//            startActivity(intent)
-//        }
+        notifyButton.setOnClickListener{
+            val intent = Intent(this, Notification::class.java)
+            startActivity(intent)
+        }
 
         jobsButton.setOnClickListener{
-            val intent = Intent(this, job_user_register::class.java)
+            val intent = Intent(this, Jobs_page::class.java)
             startActivity(intent)
         }
 

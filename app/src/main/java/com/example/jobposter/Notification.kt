@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.jobposter.activities.Insert_Job
+import com.example.jobposter.activities.JobDetails
+import com.example.jobposter.activities.Jobs_page
 import com.google.firebase.database.*
 
 class Notification: AppCompatActivity() {
@@ -47,12 +49,12 @@ class Notification: AppCompatActivity() {
         }
 
         jobsButton.setOnClickListener{
-            val intent = Intent(this, Job_Poster_register::class.java)
+            val intent = Intent(this, JobDetails::class.java)
             startActivity(intent)
         }
 
         profileButton.setOnClickListener{
-            val intent = Intent(this, JobPoster_profile::class.java)
+            val intent = Intent(this, Jobs_page::class.java)
             startActivity(intent)
         }
 
