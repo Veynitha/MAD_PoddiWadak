@@ -4,7 +4,7 @@
             "outputFile": "com.example.jobposter.app-mergeDebugResources-34:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "F:\\Code\\AndroidStudio\\Merge1\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "F:\\Code\\AndroidStudio\\Merge2\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

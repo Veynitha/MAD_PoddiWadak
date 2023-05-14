@@ -3972,7 +3972,7 @@
             "outputFile": "com.example.jobposter.app-merged_res-36:/values-night-v8_values-night-v8.arsc.flat",
             "map": [
                 {
-                    "source": "F:\\Code\\AndroidStudio\\Merge1\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "F:\\Code\\AndroidStudio\\Merge2\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -8494,6 +8494,23 @@
             "outputFile": "com.example.jobposter.app-merged_res-36:/values_values.arsc.flat",
             "map": [
                 {
+                    "source": "F:\\Code\\AndroidStudio\\Merge2\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "2,3,4,12,10,6,13,5",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "57,100,145,321,277,231,363,188",
+                        "endColumns": "41,43,41,40,40,38,46,41",
+                        "endOffsets": "94,139,182,357,313,265,405,225"
+                    },
+                    "to": {
+                        "startLines": "606,607,621,632,649,693,880,903",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "30598,30640,31664,32481,33688,36698,50369,51954",
+                        "endColumns": "41,43,41,40,40,38,46,41",
+                        "endOffsets": "30635,30679,31701,32517,33724,36732,50411,51991"
+                    }
+                },
+                {
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\565d4fdd795cf186e5e56b19503a3b12\\transformed\\browser-1.4.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
@@ -8619,6 +8636,25 @@
                     }
                 },
                 {
+                    "source": "F:\\Code\\AndroidStudio\\Merge2\\app\\src\\main\\res\\values\\themes.xml",
+                    "from": {
+                        "startLines": "15,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "677,102",
+                        "endLines": "19,13",
+                        "endColumns": "12,12",
+                        "endOffsets": "870,669"
+                    },
+                    "to": {
+                        "startLines": "5550,6151",
+                        "startColumns": "4,4",
+                        "startOffsets": "386677,425356",
+                        "endLines": "5554,6162",
+                        "endColumns": "12,12",
+                        "endOffsets": "386866,425791"
+                    }
+                },
+                {
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\665fa9a2aaadb6132f2caae34fafc59a\\transformed\\lifecycle-viewmodel-2.5.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -8650,23 +8686,6 @@
                         "startOffsets": "110279",
                         "endColumns": "42",
                         "endOffsets": "110317"
-                    }
-                },
-                {
-                    "source": "F:\\Code\\AndroidStudio\\Merge1\\app\\build\\generated\\crashlytics\\res\\debug\\values\\com_google_firebase_crashlytics_mappingfileid.xml",
-                    "from": {
-                        "startLines": "8",
-                        "startColumns": "0",
-                        "startOffsets": "286",
-                        "endColumns": "173",
-                        "endOffsets": "459"
-                    },
-                    "to": {
-                        "startLines": "1837",
-                        "startColumns": "4",
-                        "startOffsets": "119106",
-                        "endColumns": "175",
-                        "endOffsets": "119277"
                     }
                 },
                 {
@@ -8705,6 +8724,23 @@
                         "endLines": "119,122,999,10835",
                         "endColumns": "55,47,51,24",
                         "endOffsets": "5966,6122,58413,677714"
+                    }
+                },
+                {
+                    "source": "F:\\Code\\AndroidStudio\\Merge2\\app\\build\\generated\\crashlytics\\res\\debug\\values\\com_google_firebase_crashlytics_mappingfileid.xml",
+                    "from": {
+                        "startLines": "8",
+                        "startColumns": "0",
+                        "startOffsets": "286",
+                        "endColumns": "173",
+                        "endOffsets": "459"
+                    },
+                    "to": {
+                        "startLines": "1837",
+                        "startColumns": "4",
+                        "startOffsets": "119106",
+                        "endColumns": "175",
+                        "endOffsets": "119277"
                     }
                 },
                 {
@@ -8801,23 +8837,6 @@
                     }
                 },
                 {
-                    "source": "F:\\Code\\AndroidStudio\\Merge1\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,344,426,530,639,759,858",
-                        "endColumns": "143,144,81,103,108,119,98,75",
-                        "endOffsets": "194,339,421,525,634,754,853,929"
-                    },
-                    "to": {
-                        "startLines": "1857,1869,1871,1872,1873,1874,1875,1997",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "121683,122720,122913,122995,123099,123208,123328,140156",
-                        "endColumns": "143,144,81,103,108,119,98,75",
-                        "endOffsets": "121822,122860,122990,123094,123203,123323,123422,140227"
-                    }
-                },
-                {
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\450413f8b216596c64dcbc36bbc7f5dd\\transformed\\savedstate-1.2.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -8832,6 +8851,23 @@
                         "startOffsets": "110382",
                         "endColumns": "53",
                         "endOffsets": "110431"
+                    }
+                },
+                {
+                    "source": "F:\\Code\\AndroidStudio\\Merge2\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "8,1,4,3,7,14,10,12,11,9,16,17,13,5,2,15,6",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "384,17,167,118,317,683,503,601,552,462,767,806,640,218,65,722,270",
+                        "endColumns": "76,46,49,47,65,37,47,37,47,39,37,37,41,50,51,43,45",
+                        "endOffsets": "456,59,212,161,378,716,546,634,595,497,800,839,677,264,112,761,311"
+                    },
+                    "to": {
+                        "startLines": "1816,1818,1858,1870,1876,1878,1881,1882,1883,1884,1918,1987,1988,1989,1995,1996,1998",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "116772,116932,121827,122865,123427,123646,123897,123945,123983,124031,128609,139127,139165,139207,140060,140112,140232",
+                        "endColumns": "76,46,49,47,65,37,47,37,47,39,37,37,41,50,51,43,45",
+                        "endOffsets": "116844,116974,121872,122908,123488,123679,123940,123978,124026,124066,128642,139160,139202,139253,140107,140151,140273"
                     }
                 },
                 {
@@ -8854,42 +8890,6 @@
                     }
                 },
                 {
-                    "source": "F:\\Code\\AndroidStudio\\Merge1\\app\\src\\main\\res\\values\\themes.xml",
-                    "from": {
-                        "startLines": "15,2",
-                        "startColumns": "4,4",
-                        "startOffsets": "677,102",
-                        "endLines": "19,13",
-                        "endColumns": "12,12",
-                        "endOffsets": "870,669"
-                    },
-                    "to": {
-                        "startLines": "5550,6151",
-                        "startColumns": "4,4",
-                        "startOffsets": "386677,425356",
-                        "endLines": "5554,6162",
-                        "endColumns": "12,12",
-                        "endOffsets": "386866,425791"
-                    }
-                },
-                {
-                    "source": "F:\\Code\\AndroidStudio\\Merge1\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "2,3,4,12,10,6,13,5",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "57,100,145,321,277,231,363,188",
-                        "endColumns": "41,43,41,40,40,38,46,41",
-                        "endOffsets": "94,139,182,357,313,265,405,225"
-                    },
-                    "to": {
-                        "startLines": "606,607,621,632,649,693,880,903",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "30598,30640,31664,32481,33688,36698,50369,51954",
-                        "endColumns": "41,43,41,40,40,38,46,41",
-                        "endOffsets": "30635,30679,31701,32517,33724,36732,50411,51991"
-                    }
-                },
-                {
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\b0cb7effb32dd238fdfc804f7c11a466\\transformed\\recyclerview-1.1.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
@@ -8909,23 +8909,6 @@
                     }
                 },
                 {
-                    "source": "F:\\Code\\AndroidStudio\\Merge1\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "8,1,4,3,7,14,10,12,11,9,16,17,13,5,2,15,6",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "384,17,167,118,317,683,503,601,552,462,767,806,640,218,65,722,270",
-                        "endColumns": "76,46,49,47,65,37,47,37,47,39,37,37,41,50,51,43,45",
-                        "endOffsets": "456,59,212,161,378,716,546,634,595,497,800,839,677,264,112,761,311"
-                    },
-                    "to": {
-                        "startLines": "1816,1818,1858,1870,1876,1878,1881,1882,1883,1884,1918,1987,1988,1989,1995,1996,1998",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "116772,116932,121827,122865,123427,123646,123897,123945,123983,124031,128609,139127,139165,139207,140060,140112,140232",
-                        "endColumns": "76,46,49,47,65,37,47,37,47,39,37,37,41,50,51,43,45",
-                        "endOffsets": "116844,116974,121872,122908,123488,123679,123940,123978,124026,124066,128642,139160,139202,139253,140107,140151,140273"
-                    }
-                },
-                {
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\fa1e95c1e238dc348e47ebfdc8e4de7d\\transformed\\startup-runtime-1.1.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -8940,6 +8923,23 @@
                         "startOffsets": "116849",
                         "endColumns": "82",
                         "endOffsets": "116927"
+                    }
+                },
+                {
+                    "source": "F:\\Code\\AndroidStudio\\Merge2\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,344,426,530,639,759,858",
+                        "endColumns": "143,144,81,103,108,119,98,75",
+                        "endOffsets": "194,339,421,525,634,754,853,929"
+                    },
+                    "to": {
+                        "startLines": "1857,1869,1871,1872,1873,1874,1875,1997",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "121683,122720,122913,122995,123099,123208,123328,140156",
+                        "endColumns": "143,144,81,103,108,119,98,75",
+                        "endOffsets": "121822,122860,122990,123094,123203,123323,123422,140227"
                     }
                 },
                 {
