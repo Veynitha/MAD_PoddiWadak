@@ -4,7 +4,7 @@
             "outputFile": "com.example.jobposter.app-mergeDebugResources-34:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\3ec297f8e62d58ef4c4a5902385f6bea\\transformed\\core-1.10.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\ACER\\.gradle\\caches\\transforms-3\\2185364ca5be4afb9b9b792f6d7a035d\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\9767fd5c72f5ae4f0bba1f25b510632f\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\ACER\\.gradle\\caches\\transforms-3\\9767fd5c72f5ae4f0bba1f25b510632f\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

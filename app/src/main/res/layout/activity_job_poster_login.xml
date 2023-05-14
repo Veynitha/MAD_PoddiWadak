@@ -117,7 +117,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_Login" />
 
     <TextView
-        android:id="@+id/jobLister"
+        android:id="@+id/tvjobLister"
         android:layout_width="102dp"
         android:layout_height="32dp"
         android:layout_marginStart="16dp"
@@ -143,7 +143,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toStartOf="@+id/tvJobSeeker"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/jobLister"
+        app:layout_constraintStart_toEndOf="@+id/tvjobLister"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.425" />
 

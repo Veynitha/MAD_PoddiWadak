@@ -36,7 +36,7 @@
     <View
         android:id="@+id/view2"
         android:layout_width="0dp"
-        android:layout_height="80dp"
+        android:layout_height="100dp"
         android:background="@drawable/wave"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -68,12 +68,12 @@
         app:srcCompat="@drawable/ic_person" />
 
     <TextView
-        android:id="@+id/jobLister"
+        android:id="@+id/tvjobLister"
         android:layout_width="102dp"
         android:layout_height="32dp"
         android:layout_marginTop="20dp"
         android:text="JobLister"
-        android:textColor="@color/white"
+        android:textColor="@color/Secondary"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view"
@@ -94,7 +94,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toStartOf="@+id/tvJobSeeker"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/jobLister"
+        app:layout_constraintStart_toEndOf="@+id/tvjobLister"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.425" />
 
@@ -225,7 +225,6 @@
         android:id="@+id/linearLayout"
         android:layout_width="413dp"
         android:layout_height="55dp"
-
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -240,9 +239,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/ic_smallhome"
-            android:textColor="@color/white"
             android:text="@string/home" />
-
 
         <Button
             android:id="@+id/btn_Notification"
@@ -251,9 +248,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/nav_notification"
-            android:textColor="@color/white"
             android:text="@string/news" />
-
 
         <Button
             android:id="@+id/btn_Jobs"
@@ -262,9 +257,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/baseline_business_center_24"
-            android:textColor="@color/white"
             android:text="@string/jobs" />
-
 
         <Button
             android:id="@+id/btn_Profile"
@@ -273,9 +266,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/nav_profile"
-            android:textColor="@color/white"
             android:text="@string/profile" />
-
 
         <Button
             android:id="@+id/btn_More"
@@ -284,9 +275,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/baseline_list_24"
-            android:textColor="@color/white"
             android:text="@string/more" />
-
     </LinearLayout>
 
 

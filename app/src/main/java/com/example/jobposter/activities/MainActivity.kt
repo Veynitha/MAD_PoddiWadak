@@ -1,11 +1,9 @@
 package com.example.jobposter.activities
 
-import android.app.Notification
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.example.jobposter.Home
 import com.example.jobposter.R
 
 class MainActivity : AppCompatActivity() {
@@ -21,24 +19,23 @@ class MainActivity : AppCompatActivity() {
         val feedbackButton = findViewById<Button>(R.id.btn_More)
 
         homeButton.setOnClickListener{
-            val intent = Intent(this, Home::class.java)
+            val intent = Intent(this@MainActivity, job_user_register::class.java)
             startActivity(intent)
         }
         notifyButton.setOnClickListener{
-            val intent = Intent(this, com.example.jobposter.Notification::class.java)
+            val intent = Intent(this@MainActivity, Job_Poster_register::class.java)
             startActivity(intent)
         }
-
         jobsButton.setOnClickListener{
             val intent = Intent(this, Jobs_page::class.java)
             startActivity(intent)
         }
         profileButton.setOnClickListener{
-            val intent = Intent(this, JobPoster_profile::class.java)
+            val intent = Intent(this, job_user_login::class.java)
             startActivity(intent)
         }
         feedbackButton.setOnClickListener{
-            val intent = Intent(this, Insert_Job::class.java)
+            val intent = Intent(this, activity_job_user_applyjob::class.java)
             startActivity(intent)
         }
 
