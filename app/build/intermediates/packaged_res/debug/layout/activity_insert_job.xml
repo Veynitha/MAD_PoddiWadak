@@ -28,11 +28,11 @@
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <EditText
-        android:id="@+id/et_JobType"
+        android:id="@+id/et_Hours"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:ems="10"
-        android:hint="Job Type"
+        android:hint="Hours"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -115,7 +115,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/ic_smallhome"
-            android:text="Button" />
+            android:text="@string/home" />
 
         <Button
             android:id="@+id/btn_Notification"
@@ -124,7 +124,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/nav_notification"
-            android:text="Button" />
+            android:text="@string/news" />
 
         <Button
             android:id="@+id/btn_Jobs"
@@ -133,7 +133,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/baseline_business_center_24"
-            android:text="Button" />
+            android:text="@string/jobs" />
 
         <Button
             android:id="@+id/btn_Profile"
@@ -142,7 +142,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/nav_profile"
-            android:text="Button" />
+            android:text="@string/profile" />
 
         <Button
             android:id="@+id/btn_More"
@@ -151,7 +151,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/baseline_list_24"
-            android:text="Button" />
+            android:text="@string/more" />
     </LinearLayout>
 
     <EditText
@@ -165,7 +165,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_JobType" />
+        app:layout_constraintTop_toBottomOf="@+id/et_Hours" />
 
     <EditText
         android:id="@+id/et_JobPhone"

@@ -14,6 +14,8 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import java.lang.Exception
 
+
+
 class JobPoster_profile : AppCompatActivity() {
 
     //view binding
@@ -64,15 +66,14 @@ class JobPoster_profile : AppCompatActivity() {
             startActivity(intent)
         }
         binding.btnNotification.setOnClickListener{
-            val intent = Intent(this, Job_Poster_register::class.java)
-            startActivity(intent)
+
         }
         binding.btnJobs.setOnClickListener{
             val intent = Intent(this, Jobs_page::class.java)
             startActivity(intent)
         }
         binding.btnProfile.setOnClickListener{
-            val intent = Intent(this, JobPoster_profile::class.java)
+            val intent = Intent(this, JobPoster_login::class.java)
             startActivity(intent)
         }
         binding.btnMore.setOnClickListener{
@@ -96,14 +97,11 @@ class JobPoster_profile : AppCompatActivity() {
                    val password = "${snapshot.child("password").value}"
                    val uid = "${snapshot.child("uid").value}"
 
-                   //convert timestamp to proper date format
-
 
                     //set data to page
                     binding.tvFullName.text = name
                     binding.tvEmail.text = email
                     binding.tvPhone.text = phone
-
 
                    //set image
                    //glide library to get images from firebase
@@ -116,8 +114,6 @@ class JobPoster_profile : AppCompatActivity() {
                     }catch (e: Exception){
 
                     }
-
-
                 }
 
                 override fun onCancelled(error: DatabaseError) {

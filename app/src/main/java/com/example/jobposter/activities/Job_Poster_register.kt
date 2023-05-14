@@ -51,15 +51,14 @@ class Job_Poster_register : AppCompatActivity() {
             startActivity(intent)
         }
         binding.btnNotification.setOnClickListener{
-            val intent = Intent(this, Job_Poster_register::class.java)
-            startActivity(intent)
+
         }
         binding.btnJobs.setOnClickListener{
             val intent = Intent(this, Jobs_page::class.java)
             startActivity(intent)
         }
         binding.btnProfile.setOnClickListener{
-            val intent = Intent(this, JobPoster_profile::class.java)
+            val intent = Intent(this, JobPoster_login::class.java)
             startActivity(intent)
         }
         binding.btnMore.setOnClickListener{

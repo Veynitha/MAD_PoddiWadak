@@ -32,6 +32,7 @@ class JobPoster_login : AppCompatActivity() {
        //init firebase auth
         firebaseAuth = FirebaseAuth.getInstance()
 
+
         binding.btnLogin.setOnClickListener{
             validateData()
         }
@@ -50,15 +51,14 @@ class JobPoster_login : AppCompatActivity() {
             startActivity(intent)
         }
         binding.btnNotification.setOnClickListener{
-            val intent = Intent(this, Job_Poster_register::class.java)
-            startActivity(intent)
+
         }
         binding.btnJobs.setOnClickListener{
             val intent = Intent(this, Jobs_page::class.java)
             startActivity(intent)
         }
         binding.btnProfile.setOnClickListener{
-            val intent = Intent(this, JobPoster_profile::class.java)
+            val intent = Intent(this, JobPoster_login::class.java)
             startActivity(intent)
         }
         binding.btnMore.setOnClickListener{
@@ -102,7 +102,7 @@ class JobPoster_login : AppCompatActivity() {
             .addOnFailureListener {e->
                 //progressDialog.dismiss()
                 Toast.makeText(this, "Login failed due to ${e.message}", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this@JobPoster_login, MainActivity::class.java))
+
             }
     }
 

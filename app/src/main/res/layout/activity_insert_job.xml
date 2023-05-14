@@ -28,11 +28,11 @@
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <EditText
-        android:id="@+id/et_JobType"
+        android:id="@+id/et_Hours"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:ems="10"
-        android:hint="Job Type"
+        android:hint="Hours"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -165,7 +165,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_JobType" />
+        app:layout_constraintTop_toBottomOf="@+id/et_Hours" />
 
     <EditText
         android:id="@+id/et_JobPhone"

@@ -42,15 +42,14 @@ class Insert_Job : AppCompatActivity() {
             startActivity(intent)
         }
         binding.btnNotification.setOnClickListener{
-            val intent = Intent(this, Job_Poster_register::class.java)
-            startActivity(intent)
+
         }
         binding.btnJobs.setOnClickListener{
             val intent = Intent(this, Jobs_page::class.java)
             startActivity(intent)
         }
         binding.btnProfile.setOnClickListener{
-            val intent = Intent(this, JobPoster_profile::class.java)
+            val intent = Intent(this, JobPoster_login::class.java)
             startActivity(intent)
         }
         binding.btnMore.setOnClickListener{
@@ -61,7 +60,7 @@ class Insert_Job : AppCompatActivity() {
 
     private fun saveJobDetails() {
         val jobTitle = binding.etJobTitle.text.toString()
-        val jobType = binding.etJobType.text.toString()
+        val hours = binding.etHours.text.toString()
         val payment = binding.etJobPayment.text.toString()
         val description = binding.etJobDescription.text.toString()
         val location = binding.etLocation.text.toString()
@@ -70,8 +69,8 @@ class Insert_Job : AppCompatActivity() {
         if(jobTitle.isEmpty()){
             binding.etJobTitle.error = "Please enter name"
         }
-        if (jobType.isEmpty()){
-            binding.etJobType.error = "Please enter type"
+        if (hours.isEmpty()){
+            binding.etHours.error = "Please enter type"
         }
         if (payment.isEmpty()){
             binding.etJobPayment.error = "Please enter Payment"
@@ -88,13 +87,13 @@ class Insert_Job : AppCompatActivity() {
         //setting key and object
         val jobId = dbRef.push().key!!
 
-        val job = JobModel(jobId, jobTitle, jobType, payment, description, location, contactNo)
+        val job = JobModel(jobId, jobTitle, hours, payment, description, location, contactNo)
         //sending data to database
         dbRef = FirebaseDatabase.getInstance("https://podiwadak-a4d20-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Jobs")
         dbRef.child(jobId!!).setValue(job)
             .addOnSuccessListener {
                 binding.etJobTitle.setText("")
-                binding.etJobType.setText("")
+                binding.etHours.setText("")
                 binding.etLocation.setText("")
                 binding.etJobPayment.setText("")
                 binding.etJobPhone.setText("")
