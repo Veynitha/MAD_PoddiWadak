@@ -33,6 +33,21 @@
         android:testOnly="true"
         android:theme="@style/Theme.JobPoster" >
         <activity
+            android:name="com.example.jobposter.activities.job_user_register"
+            android:exported="false" />
+        <activity
+            android:name="com.example.jobposter.activities.job_user_login"
+            android:exported="false" />
+        <activity
+            android:name="com.example.jobposter.activities.job_user_profile"
+            android:exported="false" />
+        <activity
+            android:name="com.example.jobposter.activities.job_user_edit_profile"
+            android:exported="false" />
+        <activity
+            android:name="com.example.jobposter.activities.activity_job_user_applyjob"
+            android:exported="false" />
+        <activity
             android:name="com.example.jobposter.activities.JobDetails"
             android:exported="false" />
         <activity
@@ -54,7 +69,7 @@
             android:name="com.example.jobposter.activities.JobPoster_login"
             android:exported="false" />
         <activity
-            android:name="com.example.jobposter.activities.MainActivity"
+            android:name="com.example.jobposter.activities.Home"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -8,4 +8,12 @@
     <color name="button">#e8047c</color>
     <color name="notification">#ACBBF6</color>
 
+    <color name ="app_theme">#0B2EF0</color>
+    <color name ="app_theme_light">#fbfbff</color>
+    <color name ="edit_text_border">#E0AB09</color>
+    <color name ="edit_text_background">#fbfbff</color>
+
+    <color name="yellow">#FFC801</color>
+    <color name="yellowmy">#DAF003</color>
+
 </resources>

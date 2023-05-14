@@ -2,11 +2,17 @@
 <resources xmlns:ns1="http://schemas.android.com/tools">
     <color name="Primary">#103c84</color>
     <color name="Secondary">#e8047c</color>
+    <color name="app_theme">#0B2EF0</color>
+    <color name="app_theme_light">#fbfbff</color>
     <color name="black">#FF000000</color>
     <color name="button">#e8047c</color>
+    <color name="edit_text_background">#fbfbff</color>
+    <color name="edit_text_border">#E0AB09</color>
     <color name="grey">#808080</color>
     <color name="notification">#ACBBF6</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFC801</color>
+    <color name="yellowmy">#DAF003</color>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="app_name">JobPoster</string>
     <string name="com.google.firebase.crashlytics.mapping_file_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">00000000000000000000000000000000</string>
@@ -19,11 +25,17 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBA4_s845K4Va29eIEbc5dwIvO1LylPBdM</string>
     <string name="google_storage_bucket" translatable="false">podiwadak-a4d20.appspot.com</string>
     <string name="have_account">Already have an Account?</string>
+    <string name="home">Home</string>
     <string name="joblister">JobLister</string>
+    <string name="jobs">Jobs</string>
     <string name="jobseeker">JobSeeker</string>
     <string name="login">Login</string>
+    <string name="more">More</string>
+    <string name="news">News</string>
+    <string name="notifi">Notifi</string>
     <string name="password">cornypassword</string>
     <string name="phone_number">0772233445</string>
+    <string name="profile">Profile</string>
     <string name="project_id" translatable="false">podiwadak-a4d20</string>
     <string name="register">Register</string>
     <style name="RoundCorner" parent="">

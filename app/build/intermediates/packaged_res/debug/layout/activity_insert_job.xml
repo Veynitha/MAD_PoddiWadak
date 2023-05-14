@@ -115,7 +115,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/ic_smallhome"
-            android:text="Button" />
+            android:text="@string/home" />
 
         <Button
             android:id="@+id/btn_Notification"
@@ -124,7 +124,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/nav_notification"
-            android:text="Button" />
+            android:text="@string/news" />
 
         <Button
             android:id="@+id/btn_Jobs"
@@ -133,7 +133,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/baseline_business_center_24"
-            android:text="Button" />
+            android:text="@string/jobs" />
 
         <Button
             android:id="@+id/btn_Profile"
@@ -142,7 +142,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/nav_profile"
-            android:text="Button" />
+            android:text="@string/profile" />
 
         <Button
             android:id="@+id/btn_More"
@@ -151,7 +151,7 @@
             android:layout_weight="1"
             android:background="@color/Primary"
             android:drawableTop="@drawable/baseline_list_24"
-            android:text="Button" />
+            android:text="@string/more" />
     </LinearLayout>
 
     <EditText
